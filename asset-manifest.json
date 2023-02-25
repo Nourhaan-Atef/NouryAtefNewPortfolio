@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/NouryAtefNewPortfolio/static/css/main.7d306b0d.css",
+    "main.js": "/NouryAtefNewPortfolio/static/js/main.3bf01985.js",
+    "index.html": "/NouryAtefNewPortfolio/index.html",
+    "main.7d306b0d.css.map": "/NouryAtefNewPortfolio/static/css/main.7d306b0d.css.map",
+    "main.3bf01985.js.map": "/NouryAtefNewPortfolio/static/js/main.3bf01985.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7d306b0d.css",
+    "static/js/main.3bf01985.js"
+  ]
+}
