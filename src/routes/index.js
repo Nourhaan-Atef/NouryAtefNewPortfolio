@@ -9,12 +9,12 @@ import Projects from "../pages/Projects";
 
 export const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/NouryAtefNewPortfolio",
     element: <RootLayout />,
     errorElement: <ErrorPage />,
     children: [
       { index: true, element: <NouryIndex /> },
-      { path: "noury", element: <NouryIndex /> },
+      { path: "NouryAtefNewPortfolio/noury", element: <NouryIndex /> },
       { path: "noury/aboutMe", element: <AboutMe /> },
       { path: "noury/contactMe", element: <ContactMe /> },
       { path: "noury/certificates", element: <Certificates /> },
