@@ -1,6 +1,12 @@
 import { memo } from "react";
 import { Link } from "react-router-dom";
 import me from "../assets/me.png";
+import hero from "../assets/hero.png";
+import linkedin from "../assets/linkedin.png";
+import facebook from "../assets/facebook.png";
+import behance from "../assets/behance.png";
+import github from "../assets/github.png";
+
 import "../styles/index.css";
 const HomePage = () => {
   return (
@@ -10,8 +16,9 @@ const HomePage = () => {
           <div className="mb-16">
             <div className="text-blueColor font-SpaceGrotesk pt-20">
               <p className="text-4xl font-md">Hi I'm </p>
-              <h1 className="font-extrabold text-6xl pt-3 pb-5">
-                Nourhan Atef 🐱‍🏍
+              <h1 className="font-extrabold text-6xl pt-3 pb-5 ">
+                Nourhan Atef{" "}
+                <img src={hero} alt="hero" className="inline-block w-16" />
               </h1>
               <p className="font-Iner text-lg font-bold pb-10">
                 Web developer / React Developer
@@ -52,9 +59,33 @@ const HomePage = () => {
             </p>
           </div>
         </div>
-
-        <div className="photo md:block hidden">
-          <img src={me} alt="me" />
+        <div className="photo ">
+          <img src={me} alt="me" className="md:block hidden" />
+          <div className="contacts flex flex-col gap-10 md:hidden px-2">
+            <Link to="https://www.facebook.com/nony.atef.77" target="_blank">
+              <div className="w-14 bg-white rounded-full p-4">
+                <img src={facebook} alt="facebook" />
+              </div>
+            </Link>
+            <Link
+              to="https://www.linkedin.com/in/nourhan-atef-54630b1b1/"
+              target="_blank"
+            >
+              <div className="w-14 bg-white rounded-full p-4">
+                <img src={linkedin} alt="linkedin" />
+              </div>
+            </Link>
+            <Link to="https://www.behance.net/nourhan20/" target="_blank">
+              <div className="w-14 bg-white rounded-full p-4">
+                <img src={behance} alt="behance" />
+              </div>
+            </Link>
+            <Link to="https://github.com/Nourhaan-Atef" target="_blank">
+              <div className="w-14 bg-white rounded-full p-3">
+                <img src={github} alt="github" />
+              </div>
+            </Link>
+          </div>
         </div>
       </div>
     </>

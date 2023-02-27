@@ -6,7 +6,6 @@ import AboutMe from "../pages/AboutMe";
 import ContactMe from "../pages/ContactMe";
 import Projects from "../pages/Projects";
 import Experience from "../pages/Experience";
-import Certificates from "../pages/Certificates";
 
 
 
@@ -23,7 +22,6 @@ export const router = createBrowserRouter([
       { path: "NouryAtefNewPortfolio/noury/contactMe", element: <ContactMe /> },
       { path: "NouryAtefNewPortfolio/noury/projects", element: <Projects /> },
       { path: "NouryAtefNewPortfolio/noury/experience", element: <Experience /> },
-      { path: "NouryAtefNewPortfolio/noury/certificates", element: <Certificates /> },
     ],
   },
 ]);

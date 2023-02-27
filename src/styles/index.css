@@ -3,11 +3,13 @@
 @tailwind utilities;
 
 @layer components {
-  .home,
-  .nav {
-    background-image: url("../assets/1.jpg");
+  .home {
+    background-image: url("../assets/cyanBG.jpg");
   }
-  .link{
-    @apply hover:text-darkPink transition duration-200
+  .experience {
+    background-image: url("../assets/pinkBG.jpg");
+  }
+  .link {
+    @apply hover:text-darkPink transition duration-200 hover:underline;
   }
 }

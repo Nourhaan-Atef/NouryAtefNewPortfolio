@@ -7,7 +7,7 @@ const NavBar = () => {
   const [clicked, setclicked] = useState(false);
   return (
     <>
-      <div className="nav flex justify-between items-center p-5 border-b border-blueColor absolute w-full">
+      <div className="nav flex justify-between items-center p-4 border-b border-blueColor absolute w-full">
         <div className="logo">
           <Link to="/NouryAtefNewPortfolio">
             <img src={LOGO} alt="LOGO" />
@@ -31,9 +31,6 @@ const NavBar = () => {
           <Link to="NouryAtefNewPortfolio/noury/experience">
             <div className="link">Experience</div>
           </Link>
-          <Link to="NouryAtefNewPortfolio/noury/Certificates">
-            <div className="link">Certificates</div>
-          </Link>
         </div>
         <div className="cv">
           <div className="bg-blueColor lg:block hidden  font-SpaceGrotesk font-bold text-white text-xl px-6 py-3 hover:bg-white hover:text-blueColor transition duration-500 cursor-pointer">
@@ -44,15 +41,15 @@ const NavBar = () => {
           <img
             src={clicked ? cancel : menu}
             alt="menu"
-            width={clicked ? "40px" : "50px"}
-            height={clicked ? "40px" : "50px"}
+            width={clicked ? "30px" : "40px"}
+            height={clicked ? "30px" : "40px"}
             onClick={() => setclicked(!clicked)}
           />
         </div>
       </div>
       {clicked ? (
         <div
-          className={`links flex flex-col lg:hidden  gap-3 font-Iner text-blueColor font-semibold cursor-pointer p-3 relative top-32 bg-white`}
+          className={`links flex flex-col lg:hidden  gap-3 font-Iner text-blueColor font-semibold cursor-pointer bg-white p-3 absolute top-24 w-full `}
         >
           <Link to="/NouryAtefNewPortfolio">
             <div className="link">Home</div>
@@ -68,9 +65,6 @@ const NavBar = () => {
           </Link>
           <Link to="NouryAtefNewPortfolio/noury/experience">
             <div className="link">Experience</div>
-          </Link>
-          <Link to="NouryAtefNewPortfolio/noury/Certificates">
-            <div className="link">Certificates</div>
           </Link>
         </div>
       ) : (
