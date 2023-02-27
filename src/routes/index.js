@@ -1,11 +1,14 @@
 import { createBrowserRouter } from "react-router-dom";
-import AboutMe from "../pages/AboutMe";
-import ErrorPage from "../pages/ErrorPage";
-import ContactMe from "../pages/ContactMe";
-import NouryIndex from "../pages/NouryIndex";
 import RootLayout from "../pages/RootLayout";
-import Certificates from "../pages/Certificates";
+import ErrorPage from "../pages/ErrorPage";
+import NouryIndex from "../pages/NouryIndex";
+import AboutMe from "../pages/AboutMe";
+import ContactMe from "../pages/ContactMe";
 import Projects from "../pages/Projects";
+import Experience from "../pages/Experience";
+import Certificates from "../pages/Certificates";
+
+
 
 export const router = createBrowserRouter([
   {
@@ -14,11 +17,13 @@ export const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       { index: true, element: <NouryIndex /> },
+
       { path: "NouryAtefNewPortfolio/noury", element: <NouryIndex /> },
-      { path: "noury/aboutMe", element: <AboutMe /> },
-      { path: "noury/contactMe", element: <ContactMe /> },
-      { path: "noury/certificates", element: <Certificates /> },
-      { path: "noury/projects", element: <Projects /> },
+      { path: "NouryAtefNewPortfolio/noury/aboutMe", element: <AboutMe /> },
+      { path: "NouryAtefNewPortfolio/noury/contactMe", element: <ContactMe /> },
+      { path: "NouryAtefNewPortfolio/noury/projects", element: <Projects /> },
+      { path: "NouryAtefNewPortfolio/noury/experience", element: <Experience /> },
+      { path: "NouryAtefNewPortfolio/noury/certificates", element: <Certificates /> },
     ],
   },
 ]);

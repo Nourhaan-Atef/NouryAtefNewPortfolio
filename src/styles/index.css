@@ -2,3 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .home,
+  .nav {
+    background-image: url("../assets/1.jpg");
+  }
+  .link{
+    @apply hover:text-darkPink transition duration-200
+  }
+}
