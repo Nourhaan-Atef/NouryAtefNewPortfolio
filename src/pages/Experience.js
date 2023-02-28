@@ -19,7 +19,7 @@ const Experience = () => {
     <>
       <div className="experience h-full  flex flex-col justify-center items-center pt-32">
         <div className="certificate">
-          <h1 className="text-5xl font-SpaceGrotesk font-extrabold text-center text-yellowcolor mb-16">
+          <h1 className="text-5xl font-Calistoga font-extrabold text-center text-yellowcolor mb-16">
             Certificates
           </h1>
           <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 px-10 xs:my-3 my-0">
@@ -78,7 +78,7 @@ const Experience = () => {
           </div>
         </div>
         <div className="skills pb-10">
-          <h1 className="text-5xl font-SpaceGrotesk font-extrabold text-center text-yellowcolor my-16">
+          <h1 className="text-5xl font-Calistoga font-extrabold text-center text-yellowcolor my-16">
             SKILLS
           </h1>
           <div className="grid lg:grid-cols-6 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-5 px-10 cursor-pointer">

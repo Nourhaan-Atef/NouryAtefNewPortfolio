@@ -9,7 +9,10 @@
   .experience {
     background-image: url("../assets/pinkBG.jpg");
   }
+  .about{
+    background-image: url("../assets/pinkBG.jpg");
+  }
   .link {
-    @apply hover:text-darkPink transition duration-200 hover:underline;
+    @apply hover:text-yellowcolor  transition duration-200 hover:underline;
   }
 }

@@ -15,12 +15,12 @@ const HomePage = () => {
         <div className="words">
           <div className="mb-16">
             <div className="text-blueColor font-SpaceGrotesk pt-20">
-              <p className="text-4xl font-md">Hi I'm </p>
-              <h1 className="font-extrabold text-6xl pt-3 pb-5 ">
+              <p className="text-4xl font-md ">Hi I'm </p>
+              <h1 className="font-extrabold text-6xl pt-3 pb-5 font-Calistoga">
                 Nourhan Atef{" "}
                 <img src={hero} alt="hero" className="inline-block w-16" />
               </h1>
-              <p className="font-Iner text-lg font-bold pb-10">
+              <p className=" text-lg font-bold pb-10">
                 Web developer / React Developer
               </p>
             </div>

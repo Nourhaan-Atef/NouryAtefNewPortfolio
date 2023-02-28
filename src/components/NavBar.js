@@ -14,7 +14,7 @@ const NavBar = () => {
           </Link>
         </div>
         <div
-          className={`links lg:flex hidden gap-10 font-Iner text-blueColor font-semibold cursor-pointer `}
+          className={`links lg:flex hidden gap-10 font-SpaceGrotesk text-blueColor font-semibold cursor-pointer `}
         >
           <Link to="/NouryAtefNewPortfolio">
             <div className="link">Home</div>
@@ -49,7 +49,7 @@ const NavBar = () => {
       </div>
       {clicked ? (
         <div
-          className={`links flex flex-col lg:hidden  gap-3 font-Iner text-blueColor font-semibold cursor-pointer bg-white p-3 absolute top-24 w-full `}
+          className={`links flex flex-col lg:hidden  gap-3 font-Iner text-blueColor font-semibold cursor-pointer backdrop-blur-sm p-3 absolute top-24 w-full `}
         >
           <Link to="/NouryAtefNewPortfolio">
             <div className="link">Home</div>
