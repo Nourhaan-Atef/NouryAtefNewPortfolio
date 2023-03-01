@@ -60,10 +60,11 @@ const HomePage = () => {
           </div>
         </div>
         <div className="photo ">
-          <img src={me} alt="me" className="md:block hidden" />
+          <img src={me} alt="me" className="md:block hidden  cursor-pointer" />
+
           <div className="contacts flex flex-col gap-10 md:hidden px-2">
             <Link to="https://www.facebook.com/nony.atef.77" target="_blank">
-              <div className="w-14 bg-white rounded-full p-4">
+              <div className="w-14 bg-white rounded-full p-4  hover:bg-yellowcolor transition duration-300 hover:-translate-y-3">
                 <img src={facebook} alt="facebook" />
               </div>
             </Link>
@@ -71,17 +72,17 @@ const HomePage = () => {
               to="https://www.linkedin.com/in/nourhan-atef-54630b1b1/"
               target="_blank"
             >
-              <div className="w-14 bg-white rounded-full p-4">
+              <div className="w-14 bg-white rounded-full p-4  hover:bg-yellowcolor transition duration-300 hover:-translate-y-3">
                 <img src={linkedin} alt="linkedin" />
               </div>
             </Link>
             <Link to="https://www.behance.net/nourhan20/" target="_blank">
-              <div className="w-14 bg-white rounded-full p-4">
+              <div className="w-14 bg-white rounded-full p-4  hover:bg-yellowcolor transition duration-300 hover:-translate-y-3">
                 <img src={behance} alt="behance" />
               </div>
             </Link>
             <Link to="https://github.com/Nourhaan-Atef" target="_blank">
-              <div className="w-14 bg-white rounded-full p-3">
+              <div className="w-14 bg-white rounded-full p-3  hover:bg-yellowcolor transition duration-300 hover:-translate-y-3">
                 <img src={github} alt="github" />
               </div>
             </Link>

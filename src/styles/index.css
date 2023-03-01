@@ -6,13 +6,13 @@
   .home {
     background-image: url("../assets/cyanBG.jpg");
   }
-  .experience {
+
+  .about,
+  .contact {
     background-image: url("../assets/pinkBG.jpg");
   }
-  .about{
-    background-image: url("../assets/pinkBG.jpg");
-  }
+
   .link {
-    @apply hover:text-yellowcolor  transition duration-200 hover:underline;
+    @apply hover:text-yellowcolor  transition duration-200 hover:underline text-lg font-Calistoga;
   }
 }

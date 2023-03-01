@@ -100,6 +100,10 @@ const AboutMe = () => {
                 <p className="bg-blueColor  font-SpaceGrotesk font-bold text-white text-xl px-8 py-2 hover:bg-white hover:text-blueColor transition duration-500 cursor-pointer">
                   <a href={cv}>Download CV</a>
                 </p>
+                <span className="relative flex h-3 w-3 right-2 -top-1">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-yellowcolor opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-3 w-3 bg-yellowcolor"></span>
+                </span>
               </div>
             </div>
           </div>
@@ -186,7 +190,7 @@ const AboutMe = () => {
               Certificates
             </h1>
             <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 px-10 xs:my-3 my-0">
-              <div className="border-2 border-blueColor p-2 rounded-2xl flex flex-col justify-center cursor-pointer">
+              <div className="border-2 border-blueColor p-2 rounded-2xl flex flex-col justify-center cursor-pointer hover:border-yellowcolor transition duration-300">
                 <img
                   src={FWDREACT}
                   alt="FWD REACT"
@@ -205,7 +209,7 @@ const AboutMe = () => {
                 </div>
               </div>
 
-              <div className="border-2 border-blueColor p-2 rounded-2xl flex flex-col justify-center cursor-pointer">
+              <div className="border-2 border-blueColor p-2 rounded-2xl flex flex-col justify-center cursor-pointer hover:border-yellowcolor transition duration-300">
                 <img
                   src={ITI}
                   alt="ITI Frontend development"
@@ -224,7 +228,7 @@ const AboutMe = () => {
                 </div>
               </div>
 
-              <div className="border-2 border-blueColor p-2 rounded-2xl flex flex-col justify-center cursor-pointer">
+              <div className="border-2 border-blueColor p-2 rounded-2xl flex flex-col justify-center cursor-pointer hover:border-yellowcolor transition duration-300">
                 <img
                   src={FWDWEBCHALLENGER}
                   alt="FWD WEB CHALLENGER"
@@ -249,42 +253,42 @@ const AboutMe = () => {
               SKILLS
             </h1>
             <div className="grid lg:grid-cols-6 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-5 px-10 cursor-pointer">
-              <div className="border-2 border-yellowcolor rounded-full p-3 bg-white hover:">
+              <div className="border-2 border-yellowcolor rounded-full p-3 bg-white hover: hover:border-cyancolor transition duration-300">
                 <img
                   src={html}
                   alt="HTML"
                   className="w-32 rounded-full hover:-translate-y-6 transition duration-300"
                 />
               </div>
-              <div className="border-2 border-yellowcolor rounded-full flex justify-center items-center bg-white">
+              <div className="border-2 border-yellowcolor rounded-full flex justify-center items-center bg-white hover:border-cyancolor transition duration-300">
                 <img
                   src={css}
                   alt="CSS"
                   className="w-32 rounded-full hover:-translate-y-6 transition duration-300"
                 />
               </div>
-              <div className="border-2 border-yellowcolor rounded-full p-3 bg-white">
+              <div className="border-2 border-yellowcolor rounded-full p-3 bg-white hover:border-cyancolor transition duration-300">
                 <img
                   src={javascript}
                   alt="javascript"
                   className="w-32 hover:-translate-y-6 transition duration-300"
                 />
               </div>
-              <div className="border-2 border-yellowcolor rounded-full p-3 bg-white flex justify-center items-center">
+              <div className="border-2 border-yellowcolor rounded-full p-3 bg-white flex justify-center items-center hover:border-cyancolor transition duration-300">
                 <img
                   src={redux}
                   alt="Redux"
                   className="w-32 rounded-full hover:-translate-y-6 transition duration-300"
                 />
               </div>
-              <div className="border-2 border-yellowcolor rounded-full p-3 bg-white flex justify-center items-center">
+              <div className="border-2 border-yellowcolor rounded-full p-3 bg-white flex justify-center items-center hover:border-cyancolor transition duration-300">
                 <img
                   src={react}
                   alt="React"
                   className="w-32 rounded-xl hover:-translate-y-6 transition duration-300"
                 />
               </div>
-              <div className="border-2 border-yellowcolor rounded-full p-3 flex justify-center items-center bg-white">
+              <div className="border-2 border-yellowcolor rounded-full p-3 flex justify-center items-center bg-white hover:border-cyancolor transition duration-300">
                 <img
                   src={bootstrab}
                   alt="Bootstrab"
@@ -292,42 +296,42 @@ const AboutMe = () => {
                 />
               </div>
 
-              <div className="border-2 border-yellowcolor rounded-full p-3 bg-white flex justify-center items-center  ">
+              <div className="border-2 border-yellowcolor rounded-full p-3 bg-white flex justify-center items-center  hover:border-cyancolor transition duration-300 ">
                 <img
                   src={tailwind}
                   alt="Tailwind"
                   className="w-32 rounded-full hover:-translate-y-6 transition duration-300"
                 />
               </div>
-              <div className="border-2 border-yellowcolor rounded-full p-3 bg-white">
+              <div className="border-2 border-yellowcolor rounded-full p-3 bg-white hover:border-cyancolor transition duration-300">
                 <img
                   src={git}
                   alt="git"
                   className="w-32 rounded-full hover:-translate-y-6 transition duration-300 "
                 />
               </div>
-              <div className="border-2 border-yellowcolor rounded-full p-3 bg-white flex justify-center items-center">
+              <div className="border-2 border-yellowcolor rounded-full p-3 bg-white flex justify-center items-center hover:border-cyancolor transition duration-300">
                 <img
                   src={responsive}
                   alt="responsive"
                   className="w-32 rounded-full hover:-translate-y-6 transition duration-300"
                 />
               </div>
-              <div className="border-2 border-yellowcolor rounded-full p-3 bg-white flex justify-center items-center">
+              <div className="border-2 border-yellowcolor rounded-full p-3 bg-white flex justify-center items-center hover:border-cyancolor transition duration-300">
                 <img
                   src={java}
                   alt="java"
                   className="w-32 rounded-full hover:-translate-y-6 transition duration-300"
                 />
               </div>
-              <div className="border-2 border-yellowcolor rounded-full p-3 bg-white flex justify-center items-center">
+              <div className="border-2 border-yellowcolor rounded-full p-3 bg-white flex justify-center items-center hover:border-cyancolor transition duration-300">
                 <img
                   src={c}
                   alt="c"
                   className="w-32 rounded-full hover:-translate-y-6 transition duration-300"
                 />
               </div>
-              <div className="border-2 border-yellowcolor rounded-full p-3 bg-white flex justify-center items-center">
+              <div className="border-2 border-yellowcolor rounded-full p-3 bg-white flex justify-center items-center hover:border-cyancolor transition duration-300">
                 <img
                   src={figma}
                   alt="Figma"
