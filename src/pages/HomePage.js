@@ -11,7 +11,7 @@ import "../styles/index.css";
 const HomePage = () => {
   return (
     <>
-      <div className="home h-screen flex justify-between  items-center sm:px-20 px-5">
+      <div className="home h-screen flex justify-between  items-center sm:px-20 px-4">
         <div className="words">
           <div className="mb-16">
             <div className="text-blueColor font-SpaceGrotesk pt-20">

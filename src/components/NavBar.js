@@ -3,11 +3,12 @@ import { Link } from "react-router-dom";
 import LOGO from "../assets/LightLogo.png";
 import menu from "../assets/menu.png";
 import cancel from "../assets/cancle.png";
+import cv from "../assets/MY CV.pdf"
 const NavBar = () => {
   const [clicked, setclicked] = useState(false);
   return (
     <>
-      <div className="nav flex justify-between items-center p-4 border-b border-blueColor absolute w-full">
+      <div className="nav flex justify-between items-center bg-transparent p-4   border-b border-blueColor absolute  w-full backdrop-blur-sm ">
         <div className="logo">
           <Link to="/NouryAtefNewPortfolio">
             <img src={LOGO} alt="LOGO" />
@@ -28,13 +29,11 @@ const NavBar = () => {
           <Link to="NouryAtefNewPortfolio/noury/projects">
             <div className="link">Projects</div>
           </Link>
-          <Link to="NouryAtefNewPortfolio/noury/experience">
-            <div className="link">Experience</div>
-          </Link>
+       
         </div>
         <div className="cv">
           <div className="bg-blueColor lg:block hidden  font-SpaceGrotesk font-bold text-white text-xl px-6 py-3 hover:bg-white hover:text-blueColor transition duration-500 cursor-pointer">
-            Download CV
+          <a href={cv}>Download CV</a>
           </div>
         </div>
         <div className="menu lg:hidden flex justify-end cursor-pointer">
@@ -63,9 +62,7 @@ const NavBar = () => {
           <Link to="NouryAtefNewPortfolio/noury/projects">
             <div className="link">Projects</div>
           </Link>
-          <Link to="NouryAtefNewPortfolio/noury/experience">
-            <div className="link">Experience</div>
-          </Link>
+    
         </div>
       ) : (
         ""
