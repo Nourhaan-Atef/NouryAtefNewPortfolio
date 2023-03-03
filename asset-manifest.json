@@ -1,20 +1,39 @@
 {
   "files": {
-    "main.css": "/NouryAtefNewPortfolio/static/css/main.ccdd03a9.css",
-    "main.js": "/NouryAtefNewPortfolio/static/js/main.66f676ca.js",
+    "main.css": "/NouryAtefNewPortfolio/static/css/main.f74a5957.css",
+    "main.js": "/NouryAtefNewPortfolio/static/js/main.9cc61aad.js",
+    "static/media/DORSIN.png": "/NouryAtefNewPortfolio/static/media/DORSIN.570238ebc4161f8d990d.png",
+    "static/media/SavonTheme.png": "/NouryAtefNewPortfolio/static/media/SavonTheme.442a4743d854f4d0433a.png",
+    "static/media/weather.png": "/NouryAtefNewPortfolio/static/media/weather.1f8a565ae448c29127b2.png",
+    "static/media/Dogger.png": "/NouryAtefNewPortfolio/static/media/Dogger.3e0c9c6c30663ee9e8cb.png",
     "static/media/hello.jpg": "/NouryAtefNewPortfolio/static/media/hello.cb9581ee63e95053a078.jpg",
+    "static/media/myReads.png": "/NouryAtefNewPortfolio/static/media/myReads.f5129537269f9c0c82a4.png",
     "static/media/me.png": "/NouryAtefNewPortfolio/static/media/me.624a22ecb5056f8ad98f.png",
+    "static/media/Twitter Clone.png": "/NouryAtefNewPortfolio/static/media/Twitter Clone.d331c2d0d72ca5a65e4d.png",
+    "static/media/NouryCenter.png": "/NouryAtefNewPortfolio/static/media/NouryCenter.a2bcfac5daa4956d3d6d.png",
+    "static/media/todolist.png": "/NouryAtefNewPortfolio/static/media/todolist.8f52d1d5c78292205692.png",
     "static/media/react.png": "/NouryAtefNewPortfolio/static/media/react.8a6fc0a24a800d1e0f4a.png",
     "static/media/FWD React.PNG": "/NouryAtefNewPortfolio/static/media/FWD React.b197e84a3d76f29f682b.PNG",
+    "static/media/Login.png": "/NouryAtefNewPortfolio/static/media/Login.b0de2456620d7d39be6b.png",
     "static/media/iti.png": "/NouryAtefNewPortfolio/static/media/iti.cf5aa3f712536b6133fa.png",
     "static/media/FWD WebChallenger.PNG": "/NouryAtefNewPortfolio/static/media/FWD WebChallenger.486483a85988f4d6ebb5.PNG",
     "static/media/cyanBG.jpg": "/NouryAtefNewPortfolio/static/media/cyanBG.f06fd9af3f0415b322f3.jpg",
     "static/media/MY CV.pdf": "/NouryAtefNewPortfolio/static/media/MY CV.bcede9a4299bcdb8267e.pdf",
+    "static/media/time tracking.jpg": "/NouryAtefNewPortfolio/static/media/time tracking.28b9a260fc109ff92b7a.jpg",
+    "static/media/socialmedia.jpg": "/NouryAtefNewPortfolio/static/media/socialmedia.738301e94f182ad19e00.jpg",
     "static/media/bootsrtab.png": "/NouryAtefNewPortfolio/static/media/bootsrtab.f132cb791703420e69ca.png",
+    "static/media/calculator.jpg": "/NouryAtefNewPortfolio/static/media/calculator.ef52119a0b7e4b59d97f.jpg",
+    "static/media/send.png": "/NouryAtefNewPortfolio/static/media/send.006560b4ea577cbc9e20.png",
     "static/media/cancle.png": "/NouryAtefNewPortfolio/static/media/cancle.69220dd4ce138df281c6.png",
+    "static/media/TipCalculator.jpg": "/NouryAtefNewPortfolio/static/media/TipCalculator.8a2a866be75beecc8e7a.jpg",
+    "static/media/api.png": "/NouryAtefNewPortfolio/static/media/api.eed84d918373b8315867.png",
+    "static/media/QRcode.jpg": "/NouryAtefNewPortfolio/static/media/QRcode.ac822d2a574e53c2d8b7.jpg",
+    "static/media/four cards.jpg": "/NouryAtefNewPortfolio/static/media/four cards.2a7323453ef939798cf3.jpg",
+    "static/media/card.jpg": "/NouryAtefNewPortfolio/static/media/card.a620eb453c304a685da0.jpg",
     "static/media/behance.png": "/NouryAtefNewPortfolio/static/media/behance.fa163cfdbe497353b4f2.png",
     "static/media/java.png": "/NouryAtefNewPortfolio/static/media/java.ddf8676bd569fe01ab44.png",
     "static/media/github.png": "/NouryAtefNewPortfolio/static/media/github.94e14cf0de9632d386be.png",
+    "static/media/profile card.jpg": "/NouryAtefNewPortfolio/static/media/profile card.3335b1f8606ea441b14b.jpg",
     "static/media/js.png": "/NouryAtefNewPortfolio/static/media/js.46c1a89ce8cc309773c4.png",
     "static/media/menu.png": "/NouryAtefNewPortfolio/static/media/menu.2529c1c6a1e35b7f0dac.png",
     "static/media/figma.png": "/NouryAtefNewPortfolio/static/media/figma.b8d307a1b603d40a4db3.png",
@@ -24,11 +43,11 @@
     "static/media/c++.png": "/NouryAtefNewPortfolio/static/media/c++.018a61eea4293d663d58.png",
     "static/media/css.png": "/NouryAtefNewPortfolio/static/media/css.5721a3928fe43de6baf8.png",
     "index.html": "/NouryAtefNewPortfolio/index.html",
-    "main.ccdd03a9.css.map": "/NouryAtefNewPortfolio/static/css/main.ccdd03a9.css.map",
-    "main.66f676ca.js.map": "/NouryAtefNewPortfolio/static/js/main.66f676ca.js.map"
+    "main.f74a5957.css.map": "/NouryAtefNewPortfolio/static/css/main.f74a5957.css.map",
+    "main.9cc61aad.js.map": "/NouryAtefNewPortfolio/static/js/main.9cc61aad.js.map"
   },
   "entrypoints": [
-    "static/css/main.ccdd03a9.css",
-    "static/js/main.66f676ca.js"
+    "static/css/main.f74a5957.css",
+    "static/js/main.9cc61aad.js"
   ]
 }
