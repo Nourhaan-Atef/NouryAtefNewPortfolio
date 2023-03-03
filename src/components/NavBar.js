@@ -8,11 +8,19 @@ import linkedin from "../assets/linkedin.png";
 import facebook from "../assets/facebook.png";
 import behance from "../assets/behance.png";
 import github from "../assets/github.png";
+import { motion as m } from "framer-motion";
+
 const NavBar = () => {
   const [clicked, setclicked] = useState(false);
   return (
     <>
-      <div className="nav flex justify-between items-center bg-transparent p-4  border-b border-blueColor fixed w-full backdrop-blur-sm   z-10">
+      <m.div
+        initial={{ y: "-100%" }}
+        animate={{ y: "0%" }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
+        exit={{ opacity: 0 }}
+        className="nav flex justify-between items-center bg-transparent p-4  border-b border-blueColor fixed w-full backdrop-blur-sm   z-10"
+      >
         <div className="logo">
           <Link to="/NouryAtefNewPortfolio">
             <img src={LOGO} alt="LOGO" />
@@ -40,7 +48,9 @@ const NavBar = () => {
             <span className="relative inline-flex rounded-full h-4 w-4 bg-yellowcolor"></span>
           </span>
           <div className="bg-blueColor lg:block hidden  font-SpaceGrotesk font-bold text-white text-xl px-6 py-3 hover:bg-white hover:text-blueColor transition duration-500 cursor-pointer">
-            <a href={cv}>Download CV</a>
+            <a href={cv} target="_blank" rel="noreferrer">
+              Download CV
+            </a>
           </div>
         </div>
         <div className="menu lg:hidden flex justify-end cursor-pointer">
@@ -52,9 +62,13 @@ const NavBar = () => {
             onClick={() => setclicked(!clicked)}
           />
         </div>
-      </div>
+      </m.div>
       {clicked ? (
-        <div
+        <m.div
+          initial={{ y: "-100%" }}
+          animate={{ y: "0%" }}
+          transition={{ duration: 0.7, ease: "easeOut" }}
+          exit={{ opacity: 0 }}
           className={`links flex flex-col items-center lg:hidden  gap-3 font-Iner text-blueColor font-semibold cursor-pointer backdrop-blur-sm p-3 fixed top-24 w-full z-10`}
         >
           <Link to="/NouryAtefNewPortfolio">
@@ -96,7 +110,7 @@ const NavBar = () => {
               </Link>
             </div>
           </div>
-        </div>
+        </m.div>
       ) : (
         ""
       )}

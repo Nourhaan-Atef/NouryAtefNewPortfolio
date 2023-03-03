@@ -2,9 +2,10 @@ import { data } from "./data";
 import { useState } from "react";
 import Menu from "../components/Menu";
 import FilterBtns from "../components/FilterBtns";
+import { motion as m } from "framer-motion";
+
 const Projects = () => {
   const allCategories = ["All", ...new Set(data.map((item) => item.category))];
-  console.log(allCategories);
   const [menuItem, setMenuItem] = useState(data);
   const [button, setButton] = useState(allCategories);
 
@@ -73,19 +74,44 @@ const Projects = () => {
   // });
   return (
     <>
-      <div className="projects h-full pt-40 pb-10 ">
-        <header className="pb-10">
+      <m.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
+        exit={{ opacity: 0 }}
+        className="projects h-full pt-40 pb-10 "
+      >
+        <m.header
+          initial={{ y: "-100%" }}
+          animate={{ y: "0%" }}
+          transition={{ duration: 0.7, ease: "easeOut" }}
+          exit={{ opacity: 0 }}
+          className="pb-10"
+        >
           <h1 className="uppercase text-yellowcolor underline font-bold md:text-5xl text-3xl font-Calistoga text-center">
             My projects
           </h1>
-        </header>
-        <div className="md:flex items-center justify-center grid grid-cols-2 sm:px-10 px-5 md:gap-10 gap-5  font-SpaceGrotesk font-extrabold text-lg text-blueColor mt-10 mb-5">
+        </m.header>
+
+        <m.div
+          initial={{ x: "-100%" }}
+          animate={{ x: "0%" }}
+          transition={{ duration: 0.7, ease: "easeOut" }}
+          exit={{ opacity: 0 }}
+          className="md:flex items-center justify-center grid grid-cols-2 sm:px-10 px-5 md:gap-10 gap-5  font-SpaceGrotesk font-extrabold text-lg text-blueColor mt-10 mb-5"
+        >
           <FilterBtns button={button} filter={filter} />
-        </div>
-        <div className="pt-10 grid  lg:grid-cols-3 md:grid-cols-2  grid-cols-1 gap-5 lg:px-24 px-5 cursor-pointer">
+        </m.div>
+        <m.div
+          initial={{ y: "100%" }}
+          animate={{ y: "0%" }}
+          transition={{ duration: 0.7, ease: "easeOut" }}
+          exit={{ opacity: 0 }}
+          className="pt-10 grid  lg:grid-cols-3 md:grid-cols-2  grid-cols-1 gap-5 lg:px-24 px-5"
+        >
           <Menu data={menuItem} />
-        </div>
-      </div>
+        </m.div>
+      </m.div>
     </>
   );
 };

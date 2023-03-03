@@ -15,18 +15,37 @@ import java from "../assets/java.png";
 import c from "../assets/c++.png";
 import figma from "../assets/figma.png";
 import responsive from "../assets/responsive.avif";
+import { motion as m } from "framer-motion";
 
 const AboutMe = () => {
   return (
     <>
-      <div className="about h-full  flex flex-col justify-evenly pt-40 ">
-        <header className="pb-10">
+      <m.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
+        exit={{ opacity: 0 }}
+        className="about h-full  flex flex-col justify-evenly pt-40 "
+      >
+        <m.header
+          initial={{ y: "-100%" }}
+          animate={{ y: "0%" }}
+          transition={{ duration: 0.7, ease: "easeOut" }}
+          exit={{ opacity: 0 }}
+          className="pb-10"
+        >
           <h1 className="text-yellowcolor underline font-bold md:text-5xl text-3xl font-Calistoga text-center">
             KNOW MORE ABOUT ME
           </h1>
-        </header>
+        </m.header>
 
-        <div className="md:pt-20 pt-5 pb-10 md:px-10 xl:px-32 ">
+        <m.div
+          initial={{ x: "100%" }}
+          animate={{ x: "0%" }}
+          transition={{ duration: 0.7, ease: "easeOut" }}
+          exit={{ opacity: 0 }}
+          className="md:pt-20 pt-5 pb-10 md:px-10 xl:px-32 "
+        >
           <p className="px-5 font-bold font-Calistoga text-3xl text-maincolor ">
             Hello There 👋 👀
           </p>
@@ -48,15 +67,21 @@ const AboutMe = () => {
               className="w-96 rounded-full lg:block hidden"
             />
           </div>
-        </div>
+        </m.div>
 
         <div className="py-10 flex lg:flex-row md:justify-evenly flex-col gap-20">
-          <div className="info px-5">
+          <m.div
+            initial={{ x: "-100%" }}
+            animate={{ x: "0%" }}
+            transition={{ duration: 0.7, ease: "easeOut" }}
+            exit={{ opacity: 0 }}
+            className="info px-5"
+          >
             <h2 className="tracking-widest font-bold font-Calistoga text-3xl text-yellowcolor text-center uppercase underline">
               Personal Information
             </h2>
-            <div className="flex flex-col md:items-start items-center">
-              <div className="py-10 flex flex-col gap-10 ">
+            <div className=" flex lg:flex-col lg:items-start justify-center">
+              <div className="py-10 flex flex-col  gap-10">
                 <div>
                   <p className="font-Calistoga text-xl text-white ">
                     <span className="text-blueColor font-bold text-xl font-SpaceGrotesk ">
@@ -65,6 +90,7 @@ const AboutMe = () => {
                     Nourhan Atef Hossam El-Deen
                   </p>
                 </div>
+
                 <div>
                   <p className="font-Calistoga text-xl text-white">
                     <span className="text-blueColor font-bold text-xl font-SpaceGrotesk">
@@ -73,6 +99,7 @@ const AboutMe = () => {
                     anour2168@gmail.com
                   </p>
                 </div>
+
                 <div>
                   <p className="font-Calistoga text-xl text-white">
                     <span className="text-blueColor font-bold text-xl font-SpaceGrotesk">
@@ -81,6 +108,7 @@ const AboutMe = () => {
                     Egypt
                   </p>
                 </div>
+
                 <div>
                   <p className="font-Calistoga text-xl text-white">
                     <span className="text-blueColor font-bold text-xl font-SpaceGrotesk">
@@ -89,6 +117,7 @@ const AboutMe = () => {
                     Menofia,Shibin El-Kom
                   </p>
                 </div>
+
                 <div>
                   <p className="font-Calistoga text-xl text-white">
                     <span className="text-blueColor font-bold text-xl font-SpaceGrotesk">
@@ -97,9 +126,12 @@ const AboutMe = () => {
                     (+20) 1289780115
                   </p>
                 </div>
+
                 <div>
                   <p className="bg-blueColor  font-SpaceGrotesk font-bold text-white text-xl px-8 py-2 hover:bg-white hover:text-blueColor transition duration-500 cursor-pointer w-52 text-center">
-                    <a href={cv}>Download CV</a>
+                    <a href={cv} target="_blank" rel="noreferrer">
+                      Download CV
+                    </a>
                   </p>
                   <span className="relative flex h-4 w-4 -top-12 -left-1">
                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-yellowcolor opacity-75"></span>
@@ -108,15 +140,21 @@ const AboutMe = () => {
                 </div>
               </div>
             </div>
-          </div>
-          <div className="educatoin px-5">
+          </m.div>
+          <m.div
+            initial={{ x: "100%" }}
+            animate={{ x: "0%" }}
+            transition={{ duration: 0.7, ease: "easeOut" }}
+            exit={{ opacity: 0 }}
+            className="educatoin px-5"
+          >
             <h2 className="tracking-widest font-bold font-Calistoga text-3xl text-yellowcolor uppercase  underline lg:text-start text-center ">
               Education & Experience
             </h2>
             <div className="flex flex-col items-center">
               <div className="py-10 flex flex-col gap-6 ">
                 <div>
-                  <p className="font-SpaceGrotesk text-lg text-white ">
+                  <p className="font-SpaceGrotesk text-lg text-white md:text-start text-center">
                     <span className="text-blueColor font-bold text-xl font-SpaceGrotesk block pb-2">
                       📌 Graduated from
                     </span>{" "}
@@ -125,7 +163,7 @@ const AboutMe = () => {
                       FACULTY OF COMPUTERS & INFORMATIONS, SHIBIN EL-KOM, EGY
                     </span>
                   </p>
-                  <p className="flex justify-center gap-16 py-2">
+                  <p className="flex justify-center gap-16 py-2 md:text-start text-center">
                     <span className="bg-white rounded px-6 py-1 font-SpaceGrotesk font-bold text-darkPink">
                       Sep 2018
                     </span>
@@ -137,8 +175,8 @@ const AboutMe = () => {
                 </div>
 
                 <div>
-                  <p className="font-SpaceGrotesk text-lg text-white">
-                    <span className="text-blueColor font-bold text-xl font-SpaceGrotesk block">
+                  <p className="font-SpaceGrotesk text-lg text-white md:text-start text-center">
+                    <span className="text-blueColor font-bold text-xl font-SpaceGrotesk block md:text-start text-center">
                       📌 Trainning from
                     </span>{" "}
                     <span className="font-bold block">
@@ -150,7 +188,7 @@ const AboutMe = () => {
                       Front-end Develpment
                     </span>
                   </p>
-                  <p className="flex justify-center gap-16 py-2">
+                  <p className="flex justify-center gap-16 py-2 md:text-start text-center">
                     <span className="bg-white rounded px-6 py-1 font-SpaceGrotesk font-bold text-darkPink">
                       July 2021
                     </span>
@@ -160,8 +198,8 @@ const AboutMe = () => {
                   </p>
                 </div>
 
-                <div>
-                  <p className="font-SpaceGrotesk text-lg text-white">
+                <div className=" md:text-start text-center">
+                  <p className="font-SpaceGrotesk text-lg text-white md:text-start text-center">
                     <span className="text-blueColor font-bold text-xl font-SpaceGrotesk block">
                       📌 Course from
                     </span>{" "}
@@ -174,7 +212,7 @@ const AboutMe = () => {
                       React Cross-Skilling
                     </span>
                   </p>
-                  <p className="flex justify-center gap-16 py-2">
+                  <p className="flex justify-center gap-16 py-2 md:text-start text-center">
                     <span className="bg-white rounded px-6 py-1 font-SpaceGrotesk font-bold text-darkPink">
                       Dec 2022
                     </span>
@@ -185,21 +223,34 @@ const AboutMe = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </m.div>
         </div>
 
         <div className="flex flex-col justify-evenly items-center ">
-          <div className="certificate py-10">
-            <h1 className="tracking-widest text-5xl underline font-Calistoga font-extrabold text-center text-yellowcolor mb-16">
+          <m.div
+            initial={{ x: "100%" }}
+            animate={{ x: "0%" }}
+            transition={{ duration: 0.7, ease: "easeOut" }}
+            exit={{ opacity: 0 }}
+            className="certificate py-10"
+          >
+            <m.h1 className="tracking-widest text-5xl underline font-Calistoga font-extrabold text-center text-yellowcolor mb-16">
               Certificates
-            </h1>
+            </m.h1>
             <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 px-10 xs:my-3 my-0 md:px-32">
               <div className="border-2 border-blueColor p-2 rounded-2xl flex flex-col justify-center cursor-pointer hover:border-yellowcolor transition duration-300">
-                <img
-                  src={FWDREACT}
-                  alt="FWD REACT"
-                  className="rounded-xl scale-90 hover:scale-100 transition duration-500"
-                />
+                <a
+                  href="https://drive.google.com/file/d/1Z5TXgeI14PeEAV6CqZJmcikNPzpXz7Y1/view?usp=sharing"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img
+                    src={FWDREACT}
+                    alt="FWD REACT"
+                    className="rounded-xl scale-90 hover:scale-100 transition duration-500"
+                  />
+                </a>
+
                 <div className="description">
                   <div className="pt-5 text-white text-center font-bold text-xl font-SpaceGrotesk">
                     <p>React Development Cross-Skilling</p>
@@ -214,11 +265,17 @@ const AboutMe = () => {
               </div>
 
               <div className="border-2 border-blueColor p-2 rounded-2xl flex flex-col justify-center cursor-pointer hover:border-yellowcolor transition duration-300">
-                <img
-                  src={ITI}
-                  alt="ITI Frontend development"
-                  className="rounded-xl scale-90 hover:scale-100 transition duration-500"
-                />
+                <a
+                  href="https://drive.google.com/file/d/1n6R5f715PKCOItkftkthn1-JuoWwgbK7/view?usp=sharing"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img
+                    src={ITI}
+                    alt="ITI Frontend development"
+                    className="rounded-xl scale-90 hover:scale-100 transition duration-500"
+                  />
+                </a>
                 <div className="description">
                   <div className="pt-5 text-white text-center font-bold text-xl font-SpaceGrotesk  py-3">
                     <p>Front-End Development</p>
@@ -233,11 +290,17 @@ const AboutMe = () => {
               </div>
 
               <div className="border-2 border-blueColor p-2 rounded-2xl flex flex-col justify-center cursor-pointer hover:border-yellowcolor transition duration-300">
-                <img
-                  src={FWDWEBCHALLENGER}
-                  alt="FWD WEB CHALLENGER"
-                  className="rounded-xl scale-90 hover:scale-100 transition duration-500"
-                />
+                <a
+                  href="https://drive.google.com/file/d/1ilngjwv7_Ym-_KAaE5NNkyKhaI3py7l7/view?usp=sharing"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img
+                    src={FWDWEBCHALLENGER}
+                    alt="FWD WEB CHALLENGER"
+                    className="rounded-xl scale-90 hover:scale-100 transition duration-500"
+                  />
+                </a>
                 <div className="description">
                   <div className="pt-5 text-white text-center font-bold text-xl font-SpaceGrotesk  py-3">
                     <p>Web Development Challenger Track</p>
@@ -251,8 +314,14 @@ const AboutMe = () => {
                 </div>
               </div>
             </div>
-          </div>
-          <div className="skills py-10 pb-20">
+          </m.div>
+          <m.div
+            initial={{ y: "100%" }}
+            animate={{ y: "0%" }}
+            transition={{ duration: 0.7, ease: "easeOut" }}
+            exit={{ opacity: 0 }}
+            className="skills py-10 pb-20"
+          >
             <h1 className="tracking-widest text-5xl underline font-Calistoga font-extrabold text-center text-yellowcolor my-16">
               SKILLS
             </h1>
@@ -343,9 +412,9 @@ const AboutMe = () => {
                 />
               </div>
             </div>
-          </div>
+          </m.div>
         </div>
-      </div>
+      </m.div>
     </>
   );
 };

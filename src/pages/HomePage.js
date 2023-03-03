@@ -6,13 +6,26 @@ import linkedin from "../assets/linkedin.png";
 import facebook from "../assets/facebook.png";
 import behance from "../assets/behance.png";
 import github from "../assets/github.png";
+import { motion as m } from "framer-motion";
 
 import "../styles/index.css";
 const HomePage = () => {
   return (
     <>
-      <div className="home h-screen flex justify-between  items-center sm:px-20 px-4">
-        <div className="words">
+      <m.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
+        exit={{ opacity: 0 }}
+        className="home h-screen flex justify-between  items-center sm:px-20 px-4"
+      >
+        <m.div
+          initial={{ x: "-100%" }}
+          animate={{ x: "0%" }}
+          transition={{ duration: 0.7, ease: "easeOut" }}
+          exit={{ opacity: 0 }}
+          className="words"
+        >
           <div className="mb-16">
             <div className="text-blueColor font-SpaceGrotesk pt-20">
               <p className="text-4xl font-md ">Hi I'm </p>
@@ -58,10 +71,15 @@ const HomePage = () => {
               requirements.“
             </p>
           </div>
-        </div>
-        <div className="photo lg:px-20">
-          <img src={me} alt="me" className="md:block hidden  cursor-pointer" />
-
+        </m.div>
+        <m.div
+          initial={{ x: "100%" }}
+          animate={{ x: "0%" }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          exit={{ opacity: 0 }}
+          className="photo lg:px-20"
+        >
+          <img src={me} alt="me" className="md:block hidden " />
           <div className="contacts flex flex-col gap-10 md:hidden px-2">
             <Link to="https://www.facebook.com/nony.atef.77" target="_blank">
               <div className="w-14 bg-white rounded-full p-4  hover:bg-yellowcolor transition duration-300 hover:-translate-y-3">
@@ -87,8 +105,8 @@ const HomePage = () => {
               </div>
             </Link>
           </div>
-        </div>
-      </div>
+        </m.div>
+      </m.div>
     </>
   );
 };

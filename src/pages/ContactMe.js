@@ -6,24 +6,14 @@ import github from "../assets/github.png";
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
-import 'react-toastify/dist/ReactToastify.css';
+import "react-toastify/dist/ReactToastify.css";
+import { motion as m } from "framer-motion";
+
 const ContactMe = () => {
   const form = useRef();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-
-  // const notify = () =>
-  //   toast("Sent Message Successfully ✅🎉", {
-  //     position: "top-right",
-  //     autoClose: 5000,
-  //     hideProgressBar: false,
-  //     closeOnClick: true,
-  //     pauseOnHover: true,
-  //     draggable: true,
-  //     progress: undefined,
-  //     theme: "light",
-  //   });
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -48,7 +38,6 @@ const ContactMe = () => {
             progress: undefined,
             theme: "light",
           });
-      
         },
         (error) => {
           console.log(error.text);
@@ -61,13 +50,29 @@ const ContactMe = () => {
 
   return (
     <>
-      <div className="contact h-screen  flex flex-col justify-center pt-40 pb-10">
-        <header className="pb-10">
+      <m.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
+        exit={{ opacity: 0 }}
+        className="contact h-screen  flex flex-col justify-center pt-40 pb-10"
+      >
+        <m.header
+          initial={{ y: "-100%" }}
+          animate={{ y: "0%" }}
+          transition={{ duration: 0.7, ease: "easeOut" }}
+          exit={{ opacity: 0 }}
+          className="pb-10"
+        >
           <h1 className="uppercase text-yellowcolor underline font-bold md:text-5xl text-3xl font-Calistoga text-center">
             let's get in touch
           </h1>
-        </header>
-        <form
+        </m.header>
+        <m.form
+          initial={{ x: "-100%" }}
+          animate={{ x: "0%" }}
+          transition={{ duration: 0.7, ease: "easeOut" }}
+          exit={{ opacity: 0 }}
           className="flex flex-col gap-5 pb-10 py-10"
           ref={form}
           onSubmit={sendEmail}
@@ -138,13 +143,18 @@ const ContactMe = () => {
             <button
               type="submit"
               className="bg-blueColor  font-SpaceGrotesk font-bold text-white text-xl px-8 py-2 hover:bg-white hover:text-blueColor transition duration-500 cursor-pointer uppercase rounded-lg"
-        
             >
               Send ➡
             </button>
           </div>
-        </form>
-        <div className="icons">
+        </m.form>
+        <m.div
+          initial={{ x: "100%" }}
+          animate={{ x: "0%" }}
+          transition={{ duration: 0.7, ease: "easeOut" }}
+          exit={{ opacity: 0 }}
+          className="icons"
+        >
           <div className="contacts flex justify-center  gap-10  px-2 pt-5">
             <Link to="https://www.facebook.com/nony.atef.77" target="_blank">
               <div className="w-14 bg-white rounded-full p-4 hover:bg-yellowcolor transition duration-300 hover:-translate-y-3 ">
@@ -173,8 +183,8 @@ const ContactMe = () => {
               </div>
             </Link>
           </div>
-        </div>
-      </div>
+        </m.div>
+      </m.div>
     </>
   );
 };
