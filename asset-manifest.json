@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/NouryAtefNewPortfolio/static/css/main.f74a5957.css",
-    "main.js": "/NouryAtefNewPortfolio/static/js/main.9cc61aad.js",
+    "main.css": "/NouryAtefNewPortfolio/static/css/main.7fa70949.css",
+    "main.js": "/NouryAtefNewPortfolio/static/js/main.a9d46e98.js",
     "static/media/DORSIN.png": "/NouryAtefNewPortfolio/static/media/DORSIN.570238ebc4161f8d990d.png",
     "static/media/SavonTheme.png": "/NouryAtefNewPortfolio/static/media/SavonTheme.442a4743d854f4d0433a.png",
     "static/media/weather.png": "/NouryAtefNewPortfolio/static/media/weather.1f8a565ae448c29127b2.png",
@@ -43,11 +43,11 @@
     "static/media/c++.png": "/NouryAtefNewPortfolio/static/media/c++.018a61eea4293d663d58.png",
     "static/media/css.png": "/NouryAtefNewPortfolio/static/media/css.5721a3928fe43de6baf8.png",
     "index.html": "/NouryAtefNewPortfolio/index.html",
-    "main.f74a5957.css.map": "/NouryAtefNewPortfolio/static/css/main.f74a5957.css.map",
-    "main.9cc61aad.js.map": "/NouryAtefNewPortfolio/static/js/main.9cc61aad.js.map"
+    "main.7fa70949.css.map": "/NouryAtefNewPortfolio/static/css/main.7fa70949.css.map",
+    "main.a9d46e98.js.map": "/NouryAtefNewPortfolio/static/js/main.a9d46e98.js.map"
   },
   "entrypoints": [
-    "static/css/main.f74a5957.css",
-    "static/js/main.9cc61aad.js"
+    "static/css/main.7fa70949.css",
+    "static/js/main.a9d46e98.js"
   ]
 }
