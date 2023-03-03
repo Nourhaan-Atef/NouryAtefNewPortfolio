@@ -8,10 +8,12 @@
   }
 
   .about,
-  .contact {
+  .contact,
+  .projects {
     background-image: url("../assets/pinkBG.jpg");
   }
 
+ 
   .link {
     @apply hover:text-yellowcolor  transition duration-200 hover:underline text-lg font-Calistoga;
   }

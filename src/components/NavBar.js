@@ -12,7 +12,7 @@ const NavBar = () => {
   const [clicked, setclicked] = useState(false);
   return (
     <>
-      <div className="nav flex justify-between items-center bg-transparent p-4   border-b border-blueColor absolute  w-full backdrop-blur-sm ">
+      <div className="nav flex justify-between items-center bg-transparent p-4  border-b border-blueColor fixed w-full backdrop-blur-sm   z-10">
         <div className="logo">
           <Link to="/NouryAtefNewPortfolio">
             <img src={LOGO} alt="LOGO" />
@@ -55,7 +55,7 @@ const NavBar = () => {
       </div>
       {clicked ? (
         <div
-          className={`links flex flex-col items-center lg:hidden  gap-3 font-Iner text-blueColor font-semibold cursor-pointer backdrop-blur-sm p-3 absolute top-24 w-full `}
+          className={`links flex flex-col items-center lg:hidden  gap-3 font-Iner text-blueColor font-semibold cursor-pointer backdrop-blur-sm p-3 fixed top-24 w-full z-10`}
         >
           <Link to="/NouryAtefNewPortfolio">
             <div className="link">Home</div>

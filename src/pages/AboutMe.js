@@ -19,18 +19,18 @@ import responsive from "../assets/responsive.avif";
 const AboutMe = () => {
   return (
     <>
-      <div className="about h-full  flex flex-col justify-center pt-40 ">
+      <div className="about h-full  flex flex-col justify-evenly pt-40 ">
         <header className="pb-10">
           <h1 className="text-yellowcolor underline font-bold md:text-5xl text-3xl font-Calistoga text-center">
             KNOW MORE ABOUT ME
           </h1>
         </header>
 
-        <div className="pt-20 pb-10 ">
-          <p className="md:px-10 px-5 font-bold font-Calistoga text-3xl text-maincolor ">
+        <div className="md:pt-20 pt-5 pb-10 md:px-10 xl:px-32 ">
+          <p className="px-5 font-bold font-Calistoga text-3xl text-maincolor ">
             Hello There 👋 👀
           </p>
-          <div className="lg:flex justify-between md:px-10 px-5 gap-12">
+          <div className="lg:flex justify-center px-5 gap-12">
             <p className="py-10 font-SpaceGrotesk  text-3xl text-white">
               I'm a{" "}
               <span className="text-maincolor font-bold font-Calistoga">
@@ -50,146 +50,150 @@ const AboutMe = () => {
           </div>
         </div>
 
-        <div className="py-10 flex md:flex-row md:justify-center flex-col gap-20">
-          <div className="info md:px-10 px-5 ">
+        <div className="py-10 flex lg:flex-row md:justify-evenly flex-col gap-20">
+          <div className="info px-5">
             <h2 className="tracking-widest font-bold font-Calistoga text-3xl text-yellowcolor text-center uppercase underline">
               Personal Information
             </h2>
-            <div className="py-10 flex flex-col gap-10 ">
-              <div className="flex">
-                <p className="font-Calistoga text-xl text-white ">
-                  <span className="text-blueColor font-bold text-xl font-SpaceGrotesk ">
-                    NAME :{" "}
-                  </span>{" "}
-                  Nourhan Atef Hossam El-Deen
-                </p>
-              </div>
-              <div className="flex">
-                <p className="font-Calistoga text-xl text-white">
-                  <span className="text-blueColor font-bold text-xl font-SpaceGrotesk">
-                    EMAIL :{" "}
-                  </span>{" "}
-                  anour2168@gmail.com
-                </p>
-              </div>
-              <div className="flex">
-                <p className="font-Calistoga text-xl text-white">
-                  <span className="text-blueColor font-bold text-xl font-SpaceGrotesk">
-                    Residence :{" "}
-                  </span>{" "}
-                  Egypt
-                </p>
-              </div>
-              <div className="flex">
-                <p className="font-Calistoga text-xl text-white">
-                  <span className="text-blueColor font-bold text-xl font-SpaceGrotesk">
-                    ADDRESS :{" "}
-                  </span>{" "}
-                  Menofia,Shibin El-Kom
-                </p>
-              </div>
-              <div className="flex">
-                <p className="font-Calistoga text-xl text-white">
-                  <span className="text-blueColor font-bold text-xl font-SpaceGrotesk">
-                    PHONE :{" "}
-                  </span>{" "}
-                  (+20) 1289780115
-                </p>
-              </div>
-              <div className="flex">
-                <p className="bg-blueColor  font-SpaceGrotesk font-bold text-white text-xl px-8 py-2 hover:bg-white hover:text-blueColor transition duration-500 cursor-pointer">
-                  <a href={cv}>Download CV</a>
-                </p>
-                <span className="relative flex h-3 w-3 right-2 -top-1">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-yellowcolor opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-3 w-3 bg-yellowcolor"></span>
-                </span>
+            <div className="flex flex-col md:items-start items-center">
+              <div className="py-10 flex flex-col gap-10 ">
+                <div>
+                  <p className="font-Calistoga text-xl text-white ">
+                    <span className="text-blueColor font-bold text-xl font-SpaceGrotesk ">
+                      NAME :{" "}
+                    </span>{" "}
+                    Nourhan Atef Hossam El-Deen
+                  </p>
+                </div>
+                <div>
+                  <p className="font-Calistoga text-xl text-white">
+                    <span className="text-blueColor font-bold text-xl font-SpaceGrotesk">
+                      EMAIL :{" "}
+                    </span>{" "}
+                    anour2168@gmail.com
+                  </p>
+                </div>
+                <div>
+                  <p className="font-Calistoga text-xl text-white">
+                    <span className="text-blueColor font-bold text-xl font-SpaceGrotesk">
+                      Residence :{" "}
+                    </span>{" "}
+                    Egypt
+                  </p>
+                </div>
+                <div>
+                  <p className="font-Calistoga text-xl text-white">
+                    <span className="text-blueColor font-bold text-xl font-SpaceGrotesk">
+                      ADDRESS :{" "}
+                    </span>{" "}
+                    Menofia,Shibin El-Kom
+                  </p>
+                </div>
+                <div>
+                  <p className="font-Calistoga text-xl text-white">
+                    <span className="text-blueColor font-bold text-xl font-SpaceGrotesk">
+                      PHONE :{" "}
+                    </span>{" "}
+                    (+20) 1289780115
+                  </p>
+                </div>
+                <div>
+                  <p className="bg-blueColor  font-SpaceGrotesk font-bold text-white text-xl px-8 py-2 hover:bg-white hover:text-blueColor transition duration-500 cursor-pointer w-52 text-center">
+                    <a href={cv}>Download CV</a>
+                  </p>
+                  <span className="relative flex h-4 w-4 -top-12 -left-1">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-yellowcolor opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-4 w-4 bg-yellowcolor"></span>
+                  </span>
+                </div>
               </div>
             </div>
           </div>
-          <div className="educatoin md:px-10 px-5 ">
-            <h2 className="tracking-widest font-bold font-Calistoga text-3xl text-yellowcolor uppercase   underline ">
+          <div className="educatoin px-5">
+            <h2 className="tracking-widest font-bold font-Calistoga text-3xl text-yellowcolor uppercase  underline lg:text-start text-center ">
               Education & Experience
             </h2>
-            <div className="py-10 flex flex-col gap-6 ">
-              <div>
-                <p className="font-SpaceGrotesk text-lg text-white ">
-                  <span className="text-blueColor font-bold text-xl font-SpaceGrotesk block pb-2">
-                    📌 Graduated from
-                  </span>{" "}
-                  <span className="font-bold block">
-                    {" "}
-                    FACULTY OF COMPUTERS & INFORMATIONS, SHIBIN EL-KOM, EGY
-                  </span>
-                </p>
-                <p className="flex gap-16 py-2">
-                  <span className="bg-white rounded px-6 py-1 font-SpaceGrotesk font-bold text-darkPink">
-                    Sep 2018
-                  </span>
+            <div className="flex flex-col items-center">
+              <div className="py-10 flex flex-col gap-6 ">
+                <div>
+                  <p className="font-SpaceGrotesk text-lg text-white ">
+                    <span className="text-blueColor font-bold text-xl font-SpaceGrotesk block pb-2">
+                      📌 Graduated from
+                    </span>{" "}
+                    <span className="font-bold block">
+                      {" "}
+                      FACULTY OF COMPUTERS & INFORMATIONS, SHIBIN EL-KOM, EGY
+                    </span>
+                  </p>
+                  <p className="flex justify-center gap-16 py-2">
+                    <span className="bg-white rounded px-6 py-1 font-SpaceGrotesk font-bold text-darkPink">
+                      Sep 2018
+                    </span>
 
-                  <span className="bg-white rounded px-6 py-1 font-SpaceGrotesk font-bold text-darkPink">
-                    Aug 2022
-                  </span>
-                </p>
-              </div>
+                    <span className="bg-white rounded px-6 py-1 font-SpaceGrotesk font-bold text-darkPink">
+                      Aug 2022
+                    </span>
+                  </p>
+                </div>
 
-              <div>
-                <p className="font-SpaceGrotesk text-lg text-white">
-                  <span className="text-blueColor font-bold text-xl font-SpaceGrotesk block">
-                    📌 Trainning from
-                  </span>{" "}
-                  <span className="font-bold block">
-                    {" "}
-                    INFORMATION TECHNOLOGY INSTITUTE(ITI), MENOFIA, EGY
-                  </span>
-                  <span className="font-bold text-cyancolor">
-                    {" "}
-                    Front-end Develpment
-                  </span>
-                </p>
-                <p className="flex gap-16 py-2">
-                  <span className="bg-white rounded px-6 py-1 font-SpaceGrotesk font-bold text-darkPink">
-                    July 2021
-                  </span>
-                  <span className="bg-white rounded px-6 py-1 font-SpaceGrotesk font-bold text-darkPink">
-                    Sep 2021
-                  </span>
-                </p>
-              </div>
+                <div>
+                  <p className="font-SpaceGrotesk text-lg text-white">
+                    <span className="text-blueColor font-bold text-xl font-SpaceGrotesk block">
+                      📌 Trainning from
+                    </span>{" "}
+                    <span className="font-bold block">
+                      {" "}
+                      INFORMATION TECHNOLOGY INSTITUTE(ITI), MENOFIA, EGY
+                    </span>
+                    <span className="font-bold text-cyancolor">
+                      {" "}
+                      Front-end Develpment
+                    </span>
+                  </p>
+                  <p className="flex justify-center gap-16 py-2">
+                    <span className="bg-white rounded px-6 py-1 font-SpaceGrotesk font-bold text-darkPink">
+                      July 2021
+                    </span>
+                    <span className="bg-white rounded px-6 py-1 font-SpaceGrotesk font-bold text-darkPink">
+                      Sep 2021
+                    </span>
+                  </p>
+                </div>
 
-              <div>
-                <p className="font-SpaceGrotesk text-lg text-white">
-                  <span className="text-blueColor font-bold text-xl font-SpaceGrotesk block">
-                    📌 Course from
-                  </span>{" "}
-                  <span className="font-bold block">
-                    {" "}
-                    Egypt Forward(FWD) & Udacity
-                  </span>
-                  <span className="font-bold text-cyancolor">
-                    {" "}
-                    React Cross-Skilling
-                  </span>
-                </p>
-                <p className="flex gap-16 py-2">
-                  <span className="bg-white rounded px-6 py-1 font-SpaceGrotesk font-bold text-darkPink">
-                    Dec 2022
-                  </span>
-                  <span className="bg-white rounded px-6 py-1 font-SpaceGrotesk font-bold text-darkPink">
-                    Jan 2022
-                  </span>
-                </p>
+                <div>
+                  <p className="font-SpaceGrotesk text-lg text-white">
+                    <span className="text-blueColor font-bold text-xl font-SpaceGrotesk block">
+                      📌 Course from
+                    </span>{" "}
+                    <span className="font-bold block">
+                      {" "}
+                      Egypt Forward(FWD) & Udacity
+                    </span>
+                    <span className="font-bold text-cyancolor">
+                      {" "}
+                      React Cross-Skilling
+                    </span>
+                  </p>
+                  <p className="flex justify-center gap-16 py-2">
+                    <span className="bg-white rounded px-6 py-1 font-SpaceGrotesk font-bold text-darkPink">
+                      Dec 2022
+                    </span>
+                    <span className="bg-white rounded px-6 py-1 font-SpaceGrotesk font-bold text-darkPink">
+                      Jan 2022
+                    </span>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="flex flex-col justify-center items-center ">
+        <div className="flex flex-col justify-evenly items-center ">
           <div className="certificate py-10">
             <h1 className="tracking-widest text-5xl underline font-Calistoga font-extrabold text-center text-yellowcolor mb-16">
               Certificates
             </h1>
-            <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 px-10 xs:my-3 my-0">
+            <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 px-10 xs:my-3 my-0 md:px-32">
               <div className="border-2 border-blueColor p-2 rounded-2xl flex flex-col justify-center cursor-pointer hover:border-yellowcolor transition duration-300">
                 <img
                   src={FWDREACT}

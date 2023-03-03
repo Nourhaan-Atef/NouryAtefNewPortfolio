@@ -59,7 +59,7 @@ const HomePage = () => {
             </p>
           </div>
         </div>
-        <div className="photo ">
+        <div className="photo lg:px-20">
           <img src={me} alt="me" className="md:block hidden  cursor-pointer" />
 
           <div className="contacts flex flex-col gap-10 md:hidden px-2">
