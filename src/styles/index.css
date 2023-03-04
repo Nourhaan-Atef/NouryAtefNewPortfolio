@@ -13,8 +13,7 @@
     background-image: url("../assets/pinkBG.jpg");
   }
 
- 
   .link {
-    @apply hover:text-yellowcolor  transition duration-200 hover:underline text-lg font-Calistoga;
+    @apply hover:text-yellowcolor  hover:underline  transition duration-200 text-xl font-bold font-SpaceGrotesk;
   }
 }

@@ -69,18 +69,18 @@ const ContactMe = () => {
           </h1>
         </m.header>
         <m.form
-          initial={{ x: "-100%" }}
-          animate={{ x: "0%" }}
-          transition={{ duration: 0.7, ease: "easeOut" }}
-          exit={{ opacity: 0 }}
+        initial={{ scale: 0 }}
+        animate={{ scale: 1 }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
+        exit={{ opacity: 0 }}
           className="flex flex-col gap-5 pb-10 py-10"
           ref={form}
           onSubmit={sendEmail}
         >
-          <div className="flex justify-center items-start md:gap-16 gap-8">
+          <div className="flex justify-center items-center md:gap-16 gap-8">
             <label
               htmlFor="name"
-              className="uppercase font-Calistoga text-2xl font-extrabold text-maincolor "
+              className="uppercase font-Calistoga text-2xl font-extrabold text-blueColor "
             >
               Name
             </label>
@@ -97,10 +97,10 @@ const ContactMe = () => {
               }}
             />
           </div>
-          <div className="flex justify-center items-start md:gap-16 gap-8">
+          <div className="flex justify-center items-center md:gap-16 gap-8">
             <label
               htmlFor="email"
-              className="uppercase font-Calistoga text-2xl font-extrabold text-maincolor "
+              className="uppercase font-Calistoga text-2xl font-extrabold text-blueColor "
             >
               Email
             </label>
@@ -118,10 +118,10 @@ const ContactMe = () => {
             />
           </div>
 
-          <div className="flex justify-center items-start gap-8">
+          <div className="flex justify-center items-center gap-8">
             <label
               htmlFor="subject"
-              className="uppercase font-Calistoga text-2xl font-extrabold text-maincolor "
+              className="uppercase font-Calistoga text-2xl font-extrabold text-blueColor "
             >
               Subject
             </label>
@@ -149,10 +149,10 @@ const ContactMe = () => {
           </div>
         </m.form>
         <m.div
-          initial={{ x: "100%" }}
-          animate={{ x: "0%" }}
-          transition={{ duration: 0.7, ease: "easeOut" }}
-          exit={{ opacity: 0 }}
+        initial={{ scale: 0 }}
+        animate={{ scale: 1 }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
+        exit={{ opacity: 0 }}
           className="icons"
         >
           <div className="contacts flex justify-center  gap-10  px-2 pt-5">

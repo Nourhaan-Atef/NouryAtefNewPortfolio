@@ -13,7 +13,23 @@ import { motion as m } from "framer-motion";
 const NavBar = () => {
   const [clicked, setclicked] = useState(false);
 
-    return (
+  const [isSelected, setIsSelected] = useState(Tabs[0]);
+  const Tabs = [
+    {
+      url: "/NouryAtefNewPortfolio",
+      name: "Home",
+    },
+    {
+      url: "NouryAtefNewPortfolio/noury/aboutMe",
+      name: "About",
+    },
+    { url: "NouryAtefNewPortfolio/noury/contactMe", name: "Contact" },
+    {
+      url: "NouryAtefNewPortfolio/noury/projects",
+      name: "Projects",
+    },
+  ];
+  return (
     <>
       <m.div
         initial={{ y: "-100%" }}
@@ -30,18 +46,15 @@ const NavBar = () => {
         <div
           className={`links lg:flex hidden gap-10 font-SpaceGrotesk text-blueColor font-semibold cursor-pointer `}
         >
-          <Link to="/NouryAtefNewPortfolio">
-            <button className="link">Home</button>
-          </Link>
-          <Link to="NouryAtefNewPortfolio/noury/aboutMe">
-            <button className="link  ">About</button>
-          </Link>
-          <Link to="NouryAtefNewPortfolio/noury/contactMe">
-            <button className="link  ">Contact</button>
-          </Link>
-          <Link to="NouryAtefNewPortfolio/noury/projects">
-            <button className="link  ">Projects</button>
-          </Link>
+          {Tabs.map((item, index) => {
+            return (
+              <>
+                <Link to={item.url} key={index}>
+                  <button className="link">{item.name}</button>
+                </Link>
+              </>
+            );
+          })}
         </div>
         <div className="cv ">
           <span className="relative lg:flex h-4 w-4 top-3 left-40  hidden ">
@@ -64,13 +77,13 @@ const NavBar = () => {
           />
         </div>
       </m.div>
-      {clicked ? (
+      {isSelected ? (
         <m.div
           initial={{ x: "100%" }}
           animate={{ x: "0%" }}
           transition={{ duration: 0.7, ease: "easeOut" }}
           exit={{ opacity: 0 }}
-          className={`links flex flex-col items-center lg:hidden  gap-3 font-Iner text-blueColor font-semibold cursor-pointer backdrop-blur-sm p-3 fixed top-24 w-full z-10 `}
+          className={`links flex flex-col items-center lg:hidden  gap-3 font-Iner text-blueColor font-semibold cursor-pointer backdrop-blur-sm p-3 fixed top-24 w-full z-10`}
         >
           <Link to="/NouryAtefNewPortfolio">
             <div className="link ">Home</div>

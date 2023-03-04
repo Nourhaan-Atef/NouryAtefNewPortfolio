@@ -12,24 +12,18 @@ import "../styles/index.css";
 const HomePage = () => {
   return (
     <>
-      <m.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.7, ease: "easeOut" }}
-        exit={{ opacity: 0 }}
-        className="home h-screen flex justify-between  items-center sm:px-20 px-4"
-      >
+      <m.div className="home h-screen flex justify-between  items-center sm:px-20 px-4">
         <m.div
-          initial={{ x: "-100%" }}
-          animate={{ x: "0%" }}
+          initial={{ scale: 0 }}
+          animate={{ scale: 1 }}
           transition={{ duration: 0.7, ease: "easeOut" }}
           exit={{ opacity: 0 }}
-          className="words"
+          className="words "
         >
           <div className="mb-16">
             <div className="text-blueColor font-SpaceGrotesk pt-20">
               <p className="text-4xl font-md ">Hi I'm </p>
-              <h1 className="font-extrabold text-6xl pt-3 pb-5 font-Calistoga">
+              <h1 className="tracking-widest font-extrabold text-6xl pt-3 pb-5 font-Calistoga">
                 Nourhan Atef{" "}
                 <img src={hero} alt="hero" className="inline-block w-16" />
               </h1>
@@ -73,14 +67,18 @@ const HomePage = () => {
           </div>
         </m.div>
         <m.div
-          initial={{ x: "100%" }}
-          animate={{ x: "0%" }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
+          initial={{ scale: 0 }}
+          animate={{ scale: 1 }}
+          transition={{ duration: 0.7, ease: "easeOut" }}
           exit={{ opacity: 0 }}
-          className="photo lg:px-20"
+          className="photo lg:pl-20 "
         >
-          <img src={me} alt="me" className="md:block hidden " />
-          <div className="contacts flex flex-col gap-10 md:hidden px-2">
+          <img
+            src={me}
+            alt="me"
+            className="md:block hidden rounded-t-full  border-t-2 border-2 border-yellowcolor mt-28"
+          />
+          <div className="contacts flex flex-col gap-10 md:hidden px-2 mt-20">
             <Link to="https://www.facebook.com/nony.atef.77" target="_blank">
               <div className="w-14 bg-white rounded-full p-4  hover:bg-yellowcolor transition duration-300 hover:-translate-y-3">
                 <img src={facebook} alt="facebook" />
