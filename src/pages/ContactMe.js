@@ -55,7 +55,7 @@ const ContactMe = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 0.7, ease: "easeOut" }}
         exit={{ opacity: 0 }}
-        className="contact h-screen  flex flex-col justify-center pt-40 pb-10"
+        className="contact sm:h-screen h-full  flex flex-col justify-center pt-40 pb-10"
       >
         <m.header
           initial={{ y: "-100%" }}
@@ -69,15 +69,15 @@ const ContactMe = () => {
           </h1>
         </m.header>
         <m.form
-        initial={{ scale: 0 }}
-        animate={{ scale: 1 }}
-        transition={{ duration: 0.7, ease: "easeOut" }}
-        exit={{ opacity: 0 }}
-          className="flex flex-col gap-5 pb-10 py-10"
+          initial={{ scale: 0 }}
+          animate={{ scale: 1 }}
+          transition={{ duration: 0.7, ease: "easeOut" }}
+          exit={{ opacity: 0 }}
+          className="flex flex-col sm:gap-5 gap-8 sm:py-10 py-8 "
           ref={form}
           onSubmit={sendEmail}
         >
-          <div className="flex justify-center items-center md:gap-16 gap-8">
+          <div className="flex justify-center items-center flex-col sm:flex-row md:gap-16 sm:gap-8 gap-4 px-10">
             <label
               htmlFor="name"
               className="uppercase font-Calistoga text-2xl font-extrabold text-blueColor "
@@ -89,7 +89,7 @@ const ContactMe = () => {
               name="name"
               type="text"
               placeholder=" Your Name is Here 👀 "
-              className="py-2 px-3 w-1/2 outline-none rounded-xl font-SpaceGrotesk font-bold  text-blueColor"
+              className="py-2 px-3 sm:w-1/2 w-full outline-none rounded-xl font-SpaceGrotesk font-bold  text-blueColor"
               required
               value={name}
               onChange={(e) => {
@@ -97,7 +97,7 @@ const ContactMe = () => {
               }}
             />
           </div>
-          <div className="flex justify-center items-center md:gap-16 gap-8">
+          <div className="flex justify-center items-center flex-col sm:flex-row md:gap-16 sm:gap-8 gap-4  px-10">
             <label
               htmlFor="email"
               className="uppercase font-Calistoga text-2xl font-extrabold text-blueColor "
@@ -109,7 +109,7 @@ const ContactMe = () => {
               type="email"
               name="email"
               placeholder=" Your Emai is Here  👀"
-              className="py-2 px-3 w-1/2 outline-none rounded-xl font-SpaceGrotesk font-bold text-blueColor "
+              className="py-2 px-3 sm:w-1/2 w-full outline-none rounded-xl font-SpaceGrotesk font-bold text-blueColor "
               required
               value={email}
               onChange={(e) => {
@@ -118,10 +118,10 @@ const ContactMe = () => {
             />
           </div>
 
-          <div className="flex justify-center items-center gap-8">
+          <div className="flex justify-center items-center flex-col sm:flex-row sm:gap-8 gap-4  px-10">
             <label
               htmlFor="subject"
-              className="uppercase font-Calistoga text-2xl font-extrabold text-blueColor "
+              className="uppercase font-Calistoga text-2xl font-extrabold text-blueColor text-left"
             >
               Subject
             </label>
@@ -130,7 +130,7 @@ const ContactMe = () => {
               name="subject"
               rows="5"
               cols="50"
-              className="w-1/2 px-3 py-2 outline-none rounded-xl font-SpaceGrotesk font-bold  text-blueColor"
+              className="sm:w-1/2 w-full px-3 py-2 outline-none rounded-xl font-SpaceGrotesk font-bold  text-blueColor"
               placeholder="Tell Me What You Want Here 👇"
               required
               value={message}
@@ -149,10 +149,10 @@ const ContactMe = () => {
           </div>
         </m.form>
         <m.div
-        initial={{ scale: 0 }}
-        animate={{ scale: 1 }}
-        transition={{ duration: 0.7, ease: "easeOut" }}
-        exit={{ opacity: 0 }}
+          initial={{ scale: 0 }}
+          animate={{ scale: 1 }}
+          transition={{ duration: 0.7, ease: "easeOut" }}
+          exit={{ opacity: 0 }}
           className="icons"
         >
           <div className="contacts flex justify-center  gap-10  px-2 pt-5">

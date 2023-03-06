@@ -3,17 +3,22 @@
 @tailwind utilities;
 
 @layer components {
-  .home {
+  body {
     background-image: url("../assets/cyanBG.jpg");
+    height: 100vh;
   }
 
   .about,
   .contact,
   .projects {
     background-image: url("../assets/pinkBG.jpg");
+    height: 100vh;
   }
 
   .link {
-    @apply hover:text-yellowcolor  hover:underline  transition duration-200 text-xl font-bold font-SpaceGrotesk;
+    @apply hover:text-yellowcolor   transition duration-200 text-xl font-bold font-SpaceGrotesk  rounded-xl px-2 py-1;
+  }
+  .link.active {
+    @apply text-yellowcolor;
   }
 }

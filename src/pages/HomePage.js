@@ -76,7 +76,7 @@ const HomePage = () => {
           <img
             src={me}
             alt="me"
-            className="md:block hidden rounded-t-full  border-t-2 border-2 border-yellowcolor mt-28"
+            className="md:block hidden rounded-t-full rounded-l-full  border-t-2 border-2 border-yellowcolor mt-28"
           />
           <div className="contacts flex flex-col gap-10 md:hidden px-2 mt-20">
             <Link to="https://www.facebook.com/nony.atef.77" target="_blank">

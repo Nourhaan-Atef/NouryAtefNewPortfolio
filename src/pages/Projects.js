@@ -42,15 +42,9 @@ const Projects = () => {
         >
           <FilterBtns button={button} filter={filter} />
         </m.div>
-        <m.div
-          initial={{ scale: 0 }}
-          animate={{ scale: 1 }}
-          transition={{ duration: 0.7, ease: "easeOut" }}
-          exit={{ opacity: 0 }}
-          className="pt-10 grid  lg:grid-cols-3 md:grid-cols-2  grid-cols-1 gap-5 lg:px-24 px-5"
-        >
+        <div className="pt-10 grid  lg:grid-cols-3 md:grid-cols-2  grid-cols-1 gap-5 lg:px-24 px-5">
           <Menu data={menuItem} />
-        </m.div>
+        </div>
       </m.div>
     </>
   );

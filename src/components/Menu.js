@@ -2,21 +2,26 @@ import { Link } from "react-router-dom";
 import github from "../assets/github.png";
 import send from "../assets/send.png";
 import { AnimatePresence, motion as m } from "framer-motion";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Menu = ({ data }) => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
   return (
     <>
       {data.map((project) => {
         return (
-          <AnimatePresence  key={project.id}>
+          <AnimatePresence key={project.id}>
             <m.div
               layout
-             
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.5 }}
-              className="flex flex-col bg-maincolor justify-between  p-5 rounded-3xl border-2 border-transparent hover:border-yellowcolor transition duration-500"
+              transition={{ duration: 0.7 }}
+              className="animation flex flex-col bg-maincolor justify-between  p-5 rounded-3xl border-2 border-transparent hover:border-yellowcolor transition duration-500"
+              data-aos="zoom-in"
             >
               <div>
                 <img

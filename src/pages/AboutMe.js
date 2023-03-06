@@ -76,7 +76,10 @@ const AboutMe = () => {
 
         <div className="py-10 grid md:grid-cols-2 gap-20 lg:px-20 sm:px-20">
           <div className="info animation px-5" data-aos="zoom-in">
-            <h2 className="tracking-widest font-bold font-Calistoga text-3xl text-yellowcolor  uppercase underline md:text-start text-center">
+            <h2
+              className="animation tracking-widest font-bold font-Calistoga text-3xl text-yellowcolor  uppercase underline md:text-start text-center"
+              data-aos="zoom-in"
+            >
               Personal Information
             </h2>
             <div className=" flex lg:flex-col lg:items-start justify-center">
@@ -131,7 +134,10 @@ const AboutMe = () => {
             </div>
           </div>
           <div className="educatoin animation px-5" data-aos="zoom-in">
-            <h2 className="tracking-widest font-bold font-Calistoga text-3xl text-yellowcolor uppercase  underline md:text-start text-center ">
+            <h2
+              className="animation tracking-widest font-bold font-Calistoga text-3xl text-yellowcolor uppercase  underline md:text-start text-center "
+              data-aos="zoom-in"
+            >
               Education & Experience
             </h2>
             <div className="flex flex-col">
@@ -222,7 +228,10 @@ const AboutMe = () => {
               className="animation grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 px-10 xs:my-3 my-0 md:px-20"
               data-aos="zoom-in"
             >
-              <div className="border-2 border-blueColor p-2 rounded-2xl flex flex-col justify-evenly cursor-pointer hover:border-yellowcolor transition duration-500">
+              <div
+                className="animation border-2 border-blueColor p-2 rounded-2xl flex flex-col justify-evenly cursor-pointer hover:border-yellowcolor transition duration-500"
+                data-aos="zoom-in"
+              >
                 <a
                   href="https://drive.google.com/file/d/1Z5TXgeI14PeEAV6CqZJmcikNPzpXz7Y1/view?usp=sharing"
                   target="_blank"
@@ -247,7 +256,10 @@ const AboutMe = () => {
                 </div>
               </div>
 
-              <div className="border-2 border-blueColor p-2 rounded-2xl flex flex-col justify-evenly cursor-pointer hover:border-yellowcolor transition duration-500">
+              <div
+                className="animation border-2 border-blueColor p-2 rounded-2xl flex flex-col justify-evenly cursor-pointer hover:border-yellowcolor transition duration-500"
+                data-aos="zoom-in"
+              >
                 <a
                   href="https://drive.google.com/file/d/1n6R5f715PKCOItkftkthn1-JuoWwgbK7/view?usp=sharing"
                   target="_blank"
@@ -272,7 +284,10 @@ const AboutMe = () => {
                 </div>
               </div>
 
-              <div className="border-2 border-blueColor p-2 rounded-2xl flex flex-col justify-evenly cursor-pointer hover:border-yellowcolor transition duration-500">
+              <div
+                className="animation border-2 border-blueColor p-2 rounded-2xl flex flex-col justify-evenly cursor-pointer hover:border-yellowcolor transition duration-500"
+                data-aos="zoom-in"
+              >
                 <a
                   href="https://drive.google.com/file/d/1ilngjwv7_Ym-_KAaE5NNkyKhaI3py7l7/view?usp=sharing"
                   target="_blank"
@@ -296,7 +311,10 @@ const AboutMe = () => {
                   </div>
                 </div>
               </div>
-              <div className="border-2 border-blueColor p-2 rounded-2xl flex flex-col justify-evenly cursor-pointer hover:border-yellowcolor transition duration-500">
+              <div
+                className="animation border-2 border-blueColor p-2 rounded-2xl flex flex-col justify-evenly cursor-pointer hover:border-yellowcolor transition duration-500"
+                data-aos="zoom-in"
+              >
                 <a
                   href="https://docs.google.com/document/d/15IUhIuqS0qA5EdHoSgHAnaJ9cZYHpX3X/edit?usp=share_link&ouid=107819491264642398110&rtpof=true&sd=true"
                   target="_blank"
@@ -330,85 +348,120 @@ const AboutMe = () => {
               className="animatoin grid lg:grid-cols-6 md:grid-cols-5 sm:grid-cols-4 grid-cols-3 gap-7 px-10 cursor-pointer"
               data-aos="zoom-in"
             >
-              <div className="border-2 border-yellowcolor rounded-full p-3 bg-white hover: hover:border-cyancolor transition duration-300">
+              <div
+                className="animation border-2 border-yellowcolor rounded-full p-3 bg-white hover: hover:border-cyancolor transition duration-300"
+                data-aos="zoom-in"
+              >
                 <img
                   src={html}
                   alt="HTML"
                   className="w-32 rounded-full hover:-translate-y-6 transition duration-300"
                 />
               </div>
-              <div className="border-2 border-yellowcolor rounded-full flex justify-center items-center bg-white hover:border-cyancolor transition duration-300">
+              <div
+                className="animation border-2 border-yellowcolor rounded-full flex justify-center items-center bg-white hover:border-cyancolor transition duration-300"
+                data-aos="zoom-in"
+              >
                 <img
                   src={css}
                   alt="CSS"
                   className="w-32 rounded-full hover:-translate-y-6 transition duration-300"
                 />
               </div>
-              <div className="border-2 border-yellowcolor rounded-full p-3 bg-white hover:border-cyancolor transition duration-300">
+              <div
+                className="animation border-2 border-yellowcolor rounded-full p-3 bg-white hover:border-cyancolor transition duration-300"
+                data-aos="zoom-in"
+              >
                 <img
                   src={javascript}
                   alt="javascript"
                   className="w-32 hover:-translate-y-6 transition duration-300"
                 />
               </div>
-              <div className="border-2 border-yellowcolor rounded-full p-3 bg-white flex justify-center items-center hover:border-cyancolor transition duration-300">
+              <div
+                className="animation border-2 border-yellowcolor rounded-full p-3 bg-white flex justify-center items-center hover:border-cyancolor transition duration-300"
+                data-aos="zoom-in"
+              >
                 <img
                   src={redux}
                   alt="Redux"
                   className="w-32 rounded-full hover:-translate-y-6 transition duration-300"
                 />
               </div>
-              <div className="border-2 border-yellowcolor rounded-full p-3 bg-white flex justify-center items-center hover:border-cyancolor transition duration-300">
+              <div
+                className="animation border-2 border-yellowcolor rounded-full p-3 bg-white flex justify-center items-center hover:border-cyancolor transition duration-300"
+                data-aos="zoom-in"
+              >
                 <img
                   src={react}
                   alt="React"
                   className="w-32 rounded-xl hover:-translate-y-6 transition duration-300"
                 />
               </div>
-              <div className="border-2 border-yellowcolor rounded-full p-3 flex justify-center items-center bg-white hover:border-cyancolor transition duration-300">
+              <div
+                className="animation border-2 border-yellowcolor rounded-full p-3 flex justify-center items-center bg-white hover:border-cyancolor transition duration-300"
+                data-aos="zoom-in"
+              >
                 <img
                   src={bootstrab}
                   alt="Bootstrab"
                   className="w-32 rounded-full hover:-translate-y-6 transition duration-300"
                 />
               </div>
-
-              <div className="border-2 border-yellowcolor rounded-full p-3 bg-white flex justify-center items-center  hover:border-cyancolor transition duration-300 ">
+              <div
+                className="animation border-2 border-yellowcolor rounded-full p-3 bg-white flex justify-center items-center  hover:border-cyancolor transition duration-300 "
+                data-aos="zoom-in"
+              >
                 <img
                   src={tailwind}
                   alt="Tailwind"
                   className="w-32 rounded-full hover:-translate-y-6 transition duration-300"
                 />
               </div>
-              <div className="border-2 border-yellowcolor rounded-full p-3 bg-white hover:border-cyancolor transition duration-300">
+              <div
+                className="animation border-2 border-yellowcolor rounded-full p-3 bg-white hover:border-cyancolor transition duration-300"
+                data-aos="zoom-in"
+              >
                 <img
                   src={git}
                   alt="git"
                   className="w-32 rounded-full hover:-translate-y-6 transition duration-300 "
                 />
               </div>
-              <div className="border-2 border-yellowcolor rounded-full p-3 bg-white flex justify-center items-center hover:border-cyancolor transition duration-300">
+              <div
+                className="animation border-2 border-yellowcolor rounded-full p-3 bg-white flex justify-center items-center hover:border-cyancolor transition duration-300"
+                data-aos="zoom-in"
+              >
                 <img
                   src={responsive}
                   alt="responsive"
                   className="w-32 rounded-full hover:-translate-y-6 transition duration-300"
                 />
               </div>
-              <div className="border-2 border-yellowcolor rounded-full p-3 bg-white flex justify-center items-center hover:border-cyancolor transition duration-300">
+              <div
+                className="animation border-2 border-yellowcolor rounded-full p-3 bg-white flex justify-center items-center hover:border-cyancolor transition duration-300"
+                data-aos="zoom-in"
+              >
                 <img
                   src={java}
                   alt="java"
                   className="w-32 rounded-full hover:-translate-y-6 transition duration-300"
                 />
               </div>
-              <div className="border-2 border-yellowcolor rounded-full p-3 bg-white flex justify-center items-center hover:border-cyancolor transition duration-300">
+              <div
+                className="animation border-2 border-yellowcolor rounded-full p-3 bg-white flex justify-center items-center hover:border-cyancolor transition duration-300"
+                data-aos="zoom-in"
+              >
                 <img
                   src={c}
                   alt="c"
                   className="w-32 rounded-full hover:-translate-y-6 transition duration-300"
                 />
               </div>
-              <div className="border-2 border-yellowcolor rounded-full p-3 bg-white flex justify-center items-center hover:border-cyancolor transition duration-300">
+              <div
+                className="animation border-2 border-yellowcolor rounded-full p-3 bg-white flex justify-center items-center hover:border-cyancolor transition duration-300"
+                data-aos="zoom-in"
+              >
                 <img
                   src={figma}
                   alt="Figma"
