@@ -12,7 +12,7 @@
   .contact,
   .projects {
     background-image: url("../assets/pinkBG.jpg");
-    height: 100vh;
+    height: 100%;
   }
 
   .link {

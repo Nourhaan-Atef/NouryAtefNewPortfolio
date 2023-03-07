@@ -1,8 +1,4 @@
-import { Link } from "react-router-dom";
-import linkedin from "../assets/linkedin.png";
-import facebook from "../assets/facebook.png";
-import behance from "../assets/behance.png";
-import github from "../assets/github.png";
+
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
@@ -148,42 +144,7 @@ const ContactMe = () => {
             </button>
           </div>
         </m.form>
-        <m.div
-          initial={{ scale: 0 }}
-          animate={{ scale: 1 }}
-          transition={{ duration: 0.7, ease: "easeOut" }}
-          exit={{ opacity: 0 }}
-          className="icons"
-        >
-          <div className="contacts flex justify-center  gap-10  px-2 pt-5">
-            <Link to="https://www.facebook.com/nony.atef.77" target="_blank">
-              <div className="w-14 bg-white rounded-full p-4 hover:bg-yellowcolor transition duration-300 hover:-translate-y-3 ">
-                <img src={facebook} alt="facebook" />
-              </div>
-            </Link>
-
-            <Link
-              to="https://www.linkedin.com/in/nourhan-atef-54630b1b1/"
-              target="_blank"
-            >
-              <div className="w-14 bg-white rounded-full p-4 hover:bg-yellowcolor transition duration-300 hover:-translate-y-3">
-                <img src={linkedin} alt="linkedin" />
-              </div>
-            </Link>
-
-            <Link to="https://www.behance.net/nourhan20/" target="_blank">
-              <div className="w-14 bg-white rounded-full p-4 hover:bg-yellowcolor transition duration-300 hover:-translate-y-3">
-                <img src={behance} alt="behance" />
-              </div>
-            </Link>
-
-            <Link to="https://github.com/Nourhaan-Atef" target="_blank">
-              <div className="w-14 bg-white rounded-full p-3 hover:bg-yellowcolor transition duration-300 hover:-translate-y-3">
-                <img src={github} alt="github" />
-              </div>
-            </Link>
-          </div>
-        </m.div>
+      
       </m.div>
     </>
   );

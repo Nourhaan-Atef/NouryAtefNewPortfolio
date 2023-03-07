@@ -27,9 +27,48 @@ const HomePage = () => {
                 Nourhan Atef{" "}
                 <img src={hero} alt="hero" className="inline-block w-16" />
               </h1>
-              <p className=" text-lg font-bold pb-10">
+              <p className=" text-lg font-bold pb-5">
                 Web developer / React Developer
               </p>
+              <m.div
+                initial={{ scale: 0 }}
+                animate={{ scale: 1 }}
+                transition={{ duration: 0.7, ease: "easeOut" }}
+                exit={{ opacity: 0 }}
+                className="icons md:block hidden"
+              >
+                <div className="contacts flex justify-start  gap-4  pt-5">
+                  <Link
+                    to="https://www.facebook.com/nony.atef.77"
+                    target="_blank"
+                  >
+                    <div className="w-12 bg-white rounded-full p-4 hover:bg-yellowcolor transition duration-300 hover:-translate-y-3 ">
+                      <img src={facebook} alt="facebook" />
+                    </div>
+                  </Link>
+
+                  <Link
+                    to="https://www.linkedin.com/in/nourhan-atef-54630b1b1/"
+                    target="_blank"
+                  >
+                    <div className="w-12 bg-white rounded-full p-4 hover:bg-yellowcolor transition duration-300 hover:-translate-y-3">
+                      <img src={linkedin} alt="linkedin" />
+                    </div>
+                  </Link>
+
+                  <Link to="https://www.behance.net/nourhan20/" target="_blank">
+                    <div className="w-12 bg-white rounded-full p-4 hover:bg-yellowcolor transition duration-300 hover:-translate-y-3">
+                      <img src={behance} alt="behance" />
+                    </div>
+                  </Link>
+
+                  <Link to="https://github.com/Nourhaan-Atef" target="_blank">
+                    <div className="w-12 bg-white rounded-full p-3 hover:bg-yellowcolor transition duration-300 hover:-translate-y-3">
+                      <img src={github} alt="github" />
+                    </div>
+                  </Link>
+                </div>
+              </m.div>
             </div>
 
             <div className="flex items-center gap-3 pt-10">
@@ -78,6 +117,7 @@ const HomePage = () => {
             alt="me"
             className="md:block hidden rounded-t-full rounded-l-full  border-t-2 border-2 border-yellowcolor mt-28"
           />
+
           <div className="contacts flex flex-col gap-10 md:hidden px-2 mt-20">
             <Link to="https://www.facebook.com/nony.atef.77" target="_blank">
               <div className="w-14 bg-white rounded-full p-4  hover:bg-yellowcolor transition duration-300 hover:-translate-y-3">
