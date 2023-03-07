@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/NouryAtefNewPortfolio/static/css/main.f11dc476.css",
-    "main.js": "/NouryAtefNewPortfolio/static/js/main.75a85564.js",
+    "main.js": "/NouryAtefNewPortfolio/static/js/main.bc086204.js",
     "static/media/DORSIN.png": "/NouryAtefNewPortfolio/static/media/DORSIN.570238ebc4161f8d990d.png",
     "static/media/SavonTheme.png": "/NouryAtefNewPortfolio/static/media/SavonTheme.442a4743d854f4d0433a.png",
     "static/media/weather.png": "/NouryAtefNewPortfolio/static/media/weather.1f8a565ae448c29127b2.png",
@@ -18,8 +18,8 @@
     "static/media/iti.png": "/NouryAtefNewPortfolio/static/media/iti.cf5aa3f712536b6133fa.png",
     "static/media/resident.png": "/NouryAtefNewPortfolio/static/media/resident.18ca797120dcd3272811.png",
     "static/media/FWD WebChallenger.PNG": "/NouryAtefNewPortfolio/static/media/FWD WebChallenger.486483a85988f4d6ebb5.PNG",
+    "static/media/MY CV.pdf": "/NouryAtefNewPortfolio/static/media/MY CV.9b98f50765e2ef808620.pdf",
     "static/media/cyanBG.jpg": "/NouryAtefNewPortfolio/static/media/cyanBG.f06fd9af3f0415b322f3.jpg",
-    "static/media/MY CV.pdf": "/NouryAtefNewPortfolio/static/media/MY CV.bcede9a4299bcdb8267e.pdf",
     "static/media/address.png": "/NouryAtefNewPortfolio/static/media/address.04a1958f9d3ad737789d.png",
     "static/media/girl.png": "/NouryAtefNewPortfolio/static/media/girl.eccc73600d8f6f3d6b7b.png",
     "static/media/time tracking.jpg": "/NouryAtefNewPortfolio/static/media/time tracking.28b9a260fc109ff92b7a.jpg",
@@ -50,10 +50,10 @@
     "static/media/css.png": "/NouryAtefNewPortfolio/static/media/css.5721a3928fe43de6baf8.png",
     "index.html": "/NouryAtefNewPortfolio/index.html",
     "main.f11dc476.css.map": "/NouryAtefNewPortfolio/static/css/main.f11dc476.css.map",
-    "main.75a85564.js.map": "/NouryAtefNewPortfolio/static/js/main.75a85564.js.map"
+    "main.bc086204.js.map": "/NouryAtefNewPortfolio/static/js/main.bc086204.js.map"
   },
   "entrypoints": [
     "static/css/main.f11dc476.css",
-    "static/js/main.75a85564.js"
+    "static/js/main.bc086204.js"
   ]
 }
