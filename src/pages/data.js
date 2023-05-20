@@ -5,6 +5,7 @@ import bootstrab from "../assets/bootsrtab.png";
 import tailwind from "../assets/tailwind.png";
 import redux from "../assets/Redux.png";
 import react from "../assets/react.png";
+import typescript from "../assets/typescript.png";
 import api from "../assets/api.png";
 import savon from "../assets/SavonTheme.png";
 import dogger from "../assets/Dogger.png";
@@ -23,6 +24,8 @@ import Tipcalculator from "../assets/TipCalculator.jpg";
 import TimeTracking from "../assets/time tracking.jpg";
 import socialmedia from "../assets/socialmedia.jpg";
 import calculator from "../assets/calculator.jpg";
+import QuotesApp from "../assets/Quotes App.png";
+import scandiweb from "../assets/scandiweb.png";
 export const data = [
   {
     id: 1,
@@ -60,6 +63,24 @@ export const data = [
     img: signUp,
     category: "Static",
     tools: [html, css, javascript],
+  },
+  {
+    id: 18,
+    name: "Quotes App",
+    git: "https://github.com/Nourhaan-Atef/QuotesApp",
+    live: "https://quotes-app-sage.vercel.app/",
+    img: QuotesApp,
+    category: "React",
+    tools: [react, redux, typescript, tailwind, api],
+  },
+  {
+    id: 19,
+    name: "Online-Store Scandiweb",
+    git: "https://github.com/Mostafa142/Online-Store-Scandiweb",
+    live: "https://online-store-scandiweb.vercel.app/",
+    img: scandiweb,
+    category: "React",
+    tools: [react, redux, typescript, tailwind, api],
   },
 
   {
@@ -179,5 +200,4 @@ export const data = [
     category: "Challenge",
     tools: [html, css, javascript, bootstrab],
   },
-
 ];
