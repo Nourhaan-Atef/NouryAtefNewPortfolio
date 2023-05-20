@@ -1,24 +1,26 @@
 {
   "files": {
     "main.css": "/NouryAtefNewPortfolio/static/css/main.f11dc476.css",
-    "main.js": "/NouryAtefNewPortfolio/static/js/main.2888b0a0.js",
+    "main.js": "/NouryAtefNewPortfolio/static/js/main.afa14d38.js",
     "static/media/DORSIN.png": "/NouryAtefNewPortfolio/static/media/DORSIN.570238ebc4161f8d990d.png",
     "static/media/SavonTheme.png": "/NouryAtefNewPortfolio/static/media/SavonTheme.442a4743d854f4d0433a.png",
     "static/media/weather.png": "/NouryAtefNewPortfolio/static/media/weather.1f8a565ae448c29127b2.png",
     "static/media/Dogger.png": "/NouryAtefNewPortfolio/static/media/Dogger.3e0c9c6c30663ee9e8cb.png",
     "static/media/hello.jpg": "/NouryAtefNewPortfolio/static/media/hello.cb9581ee63e95053a078.jpg",
     "static/media/myReads.png": "/NouryAtefNewPortfolio/static/media/myReads.f5129537269f9c0c82a4.png",
+    "static/media/scandiweb.png": "/NouryAtefNewPortfolio/static/media/scandiweb.20f916e188d3a0dc1ecc.png",
     "static/media/me.png": "/NouryAtefNewPortfolio/static/media/me.624a22ecb5056f8ad98f.png",
     "static/media/Twitter Clone.png": "/NouryAtefNewPortfolio/static/media/Twitter Clone.d331c2d0d72ca5a65e4d.png",
     "static/media/NouryCenter.png": "/NouryAtefNewPortfolio/static/media/NouryCenter.a2bcfac5daa4956d3d6d.png",
     "static/media/todolist.png": "/NouryAtefNewPortfolio/static/media/todolist.8f52d1d5c78292205692.png",
+    "static/media/Quotes App.png": "/NouryAtefNewPortfolio/static/media/Quotes App.66d80870589b6fe58a7d.png",
     "static/media/react.png": "/NouryAtefNewPortfolio/static/media/react.8a6fc0a24a800d1e0f4a.png",
     "static/media/FWD React.PNG": "/NouryAtefNewPortfolio/static/media/FWD React.b197e84a3d76f29f682b.PNG",
     "static/media/Login.png": "/NouryAtefNewPortfolio/static/media/Login.b0de2456620d7d39be6b.png",
     "static/media/iti.png": "/NouryAtefNewPortfolio/static/media/iti.cf5aa3f712536b6133fa.png",
     "static/media/resident.png": "/NouryAtefNewPortfolio/static/media/resident.18ca797120dcd3272811.png",
     "static/media/FWD WebChallenger.PNG": "/NouryAtefNewPortfolio/static/media/FWD WebChallenger.486483a85988f4d6ebb5.PNG",
-    "static/media/MY CV.pdf": "/NouryAtefNewPortfolio/static/media/MY CV.0d48446378b84edc0db9.pdf",
+    "static/media/MY CV.pdf": "/NouryAtefNewPortfolio/static/media/MY CV.31873fbeb03613436b5d.pdf",
     "static/media/cyanBG.jpg": "/NouryAtefNewPortfolio/static/media/cyanBG.f06fd9af3f0415b322f3.jpg",
     "static/media/address.png": "/NouryAtefNewPortfolio/static/media/address.04a1958f9d3ad737789d.png",
     "static/media/girl.png": "/NouryAtefNewPortfolio/static/media/girl.eccc73600d8f6f3d6b7b.png",
@@ -44,16 +46,17 @@
     "static/media/menu.png": "/NouryAtefNewPortfolio/static/media/menu.2529c1c6a1e35b7f0dac.png",
     "static/media/figma.png": "/NouryAtefNewPortfolio/static/media/figma.b8d307a1b603d40a4db3.png",
     "static/media/linkedin.png": "/NouryAtefNewPortfolio/static/media/linkedin.cd728d029eb1863f56fa.png",
+    "static/media/typescript.png": "/NouryAtefNewPortfolio/static/media/typescript.8e08c2165d60d7ca62a9.png",
     "static/media/pinkBG.jpg": "/NouryAtefNewPortfolio/static/media/pinkBG.de7e702a3602ba1d031f.jpg",
     "static/media/responsive.avif": "/NouryAtefNewPortfolio/static/media/responsive.c125febd0a4d39bf29a6.avif",
     "static/media/c++.png": "/NouryAtefNewPortfolio/static/media/c++.018a61eea4293d663d58.png",
     "static/media/css.png": "/NouryAtefNewPortfolio/static/media/css.5721a3928fe43de6baf8.png",
     "index.html": "/NouryAtefNewPortfolio/index.html",
     "main.f11dc476.css.map": "/NouryAtefNewPortfolio/static/css/main.f11dc476.css.map",
-    "main.2888b0a0.js.map": "/NouryAtefNewPortfolio/static/js/main.2888b0a0.js.map"
+    "main.afa14d38.js.map": "/NouryAtefNewPortfolio/static/js/main.afa14d38.js.map"
   },
   "entrypoints": [
     "static/css/main.f11dc476.css",
-    "static/js/main.2888b0a0.js"
+    "static/js/main.afa14d38.js"
   ]
 }
